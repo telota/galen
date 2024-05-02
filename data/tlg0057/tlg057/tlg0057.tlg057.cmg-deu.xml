@@ -5,12 +5,30 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>DLA_06_Ueber_test</title>
-            <author>Wolfr</author>
+            <title xml:lang="lat">De locis affectis</title>
+            <author>Galen</author>
+            <editor>Carl Wolfram Brunschön</editor>
          </titleStmt>
          <publicationStmt>
-            <p>
-            </p>
+            <publisher>
+               <orgName role="hostingInstitution">
+                  <ref target="https://www.bbaw.de">Berlin-Brandenburgische Akademie der Wissenschaften</ref>
+               </orgName>
+               <orgName role="project">
+                  <ref target="https://cmg.bbaw.de/startseite/">Galen als Vermittler, Interpret und Vollender der antiken Medizin</ref>
+               </orgName>
+               <address>
+                  <addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine>
+                  <country>Germany</country>
+               </address>
+            </publisher>
+            <pubPlace ref="https://www.geonames.org/2950159">Berlin</pubPlace>
+            <date type="publication">2024</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</p>
+               </licence>
+            </availability>
          </publicationStmt>
          <notesStmt>
             <note>Created by the 
@@ -18,38 +36,66 @@
             </note>
          </notesStmt>
          <sourceDesc>
-            <p/>
+            <biblStruct>
+               <monogr>
+                  <title xml:lang="lat">Galeni De locis affectis V–VI</title>
+                  <author>Galen</author>
+                  <editor>Carl Wolfram Brunschön</editor>
+                  <imprint>
+                     <publisher>De Gruyter</publisher>
+                     <pubPlace>Berlin</pubPlace>
+                     <biblScope unit="vol">5/6</biblScope>
+                     <date>2021</date>
+                  </imprint>
+               </monogr>
+               <ref target="https://doi.org/10.1515/9783110587449">Volume 5/6,1,3 in the series Corpus Medicorum Graecorum</ref>
+            </biblStruct>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <variantEncoding method="double-end-point"
-                          location="internal"/>
+         <refsDecl n="CTS">
+            <cRefPattern matchPattern="(.+),(.+)"
+                         n="chapter"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)"
+                         n="book"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
       </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">
+                            German
+                            </language>
+         </langUsage>
+      </profileDesc>
    </teiHeader>
    <text>
       <body>
          <div type="translation"
               xml:lang="deu"
-              n="urn:cts:greekLit:tlg0057.dla06-de">
-            <p/>
-            <p/>
-            <p>
-               <lb n="1"/>GALEN</p>
-            <p/>
-            <p>
-               <lb n="2"/>ÜBER DAS ERKENNEN ERKRANKTER KÖRPERTEILE</p>
-            <p/>
-            <p>
-               <lb n="3"/>BUCH VI</p>
-            <p/>
-            <p/>
-            <p/>
+              n="urn:cts:greekLit:tlg0057.tlg057.cmg-deu">
             <div type="textpart"
-                 subtype="chapter"
-                 n="1,1">
-               <p n="1">
-                  <lb n="4"/>
-                  <note type="marginal">1</note>1. Aufgrund des zuvor über die Leber Gesagten ist es nicht mehr schwer für euch 
+                 subtype="book"
+                 n="6">
+               <p/>
+               <p/>
+               <p>
+                  <lb n="1"/>GALEN</p>
+               <p/>
+               <p>
+                  <lb n="2"/>ÜBER DAS ERKENNEN ERKRANKTER KÖRPERTEILE</p>
+               <p/>
+               <p>
+                  <lb n="3"/>BUCH VI</p>
+               <p/>
+               <p/>
+               <p/>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="1,1">
+                  <p n="1">
+                     <lb n="4"/>1. Aufgrund des zuvor über die Leber Gesagten ist es nicht mehr schwer für euch 
 <lb n="5"/>herauszufinden, an welchen Zeichen man eine Erkrankung der Milz erkennt, über die 
 <lb n="6"/>Tatsache hinaus, dass auch die Entzündungen der Milz wegen ihrer Verhärtung den­
 <lb n="7"/>jenigen, die sie abtasten, leicht auffallen. Während die Milz die meisten von diesen Zei­
@@ -60,13 +106,12 @@
 <lb n="12"/>dass sie davon ernährt wird – wenn also ihre anziehende Kraft ihre Spannung verloren 
 <lb n="13"/>hat, wird das von der Leber kommende Blut ungereinigt durch den ganzen Körper 
 <lb n="14"/>transportiert, und demgemäß wird die Farbe bei diesen Personen schwärz­licher. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="1,2">
-               <p n="2">
-                  <lb n="15"/>
-                  <note type="marginal">2</note>Und tatsächlich scheidet auch die Milz oft Rückstände aus sich aus wie die Leber, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="1,2">
+                  <p n="2">
+                     <lb n="15"/>Und tatsächlich scheidet auch die Milz oft Rückstände aus sich aus wie die Leber, 
 <lb n="16"/>sodass auch mal durch Erbrechen zusammen mit Übelkeit schwarzgalliges Blut ausge­
 <lb n="17"/>schieden wird und anderes derartiges (Blut) nach unten abgeht. Aber auch ohne derar­
 <lb n="18"/>tige Entleerung bewirkt sie Niedergeschlagenheit und Mutlosigkeit wie bei den Melan­
@@ -74,19 +119,18 @@
 <lb n="20"/>den Magen geführte Rückstand ganz sauer ist, oft aber bewirkt sie das Gefühl, dass sich 
 <lb n="21"/>der Magen dreht und sich zurückbeugt, wenn er (der Rückstand) eine andere Verderb­
 <lb n="22"/>nis aufweist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="1,3">
-               <p n="3">
-                  <lb n="23"/>
-                  <note type="marginal">3</note>Wie aber die Verhärtung der Milz Wassersucht verursacht, da die Leber in Mitlei­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="1,3">
+                  <p n="3">
+                     <lb n="23"/>Wie aber die Verhärtung der Milz Wassersucht verursacht, da die Leber in Mitlei­
 <lb n="24"/>denschaft gezogen wird, ist auch zuvor dargelegt worden. Aber auch wenn mal beide 
 <lb n="25"/>Organe erkranken, haben wir gesehen, dass Gelbsucht entsteht, die zu einer schwärz­
 <lb n="26"/>licheren Farbe neigt als die üblichen (Arten von Gelbsucht), sodass man meinen könn­
 <lb n="27"/>te, die gelbe Galle sei mit Ruß vermischt. Da manche Ärzte annehmen, dass bei sol­chen 
 <pb n="375"/>
-                  <lb n="1"/>Patienten die Leber nicht betroffen sei, wundern sie sich, wie es auf­grund der Milz zu 
+                     <lb n="1"/>Patienten die Leber nicht betroffen sei, wundern sie sich, wie es auf­grund der Milz zu 
 <lb n="2"/>Gelbsucht kommt, so wie alle diejenigen (sich wundern), die glau­ben, dass ohne Betei­
 <lb n="3"/>ligung der Leber aufgrund einzig und allein der Verhärtung der Milz die Kranken von 
 <lb n="4"/>einer wassersuchtähnlichen Flüssigkeitsansammlung befallen werden. Ebenso wun­
@@ -96,13 +140,12 @@
 <lb n="8"/>Denn auch in diesen Fällen glauben sie nicht, dass das Organ erkrankt ist, weil sie sich 
 <lb n="9"/>unter dem Einfluss der Erasistrateer daran gewöhnt haben, jeden Körperteil als 
 <lb n="10"/>nicht krank anzusehen, wenn er weder eine Art Geschwulst noch ein Geschwür hat. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="1,4">
-               <p n="4">
-                  <lb n="11"/>
-                  <note type="marginal">4</note>Aber man wird es ihnen nachsehen müssen, dass sie so denken, da nach ihrer Mei­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="1,4">
+                  <p n="4">
+                     <lb n="11"/>Aber man wird es ihnen nachsehen müssen, dass sie so denken, da nach ihrer Mei­
 <lb n="12"/>nung keine Krankheit aufgrund einer schlechten Mischung entsteht. Alle diejeni­gen 
 <lb n="13"/>Ärzte aber, die den deutlichen Erscheinungen folgen und annehmen, dass einige Sym­
 <lb n="14"/>ptome aufgrund der Abkühlung eines Körperteils entstehen – über diese kann man 
@@ -118,40 +161,37 @@
 <lb n="24"/>auch wegen der Milz zur Wassersucht, entweder wenn sie eine Geschwulst hat und 
 <lb n="25"/>gekühlt wird, wie bei den Verhärtungen, oder auch ohne Geschwulst, wie infolge des 
 <lb n="26"/>Trinkens von schädlichem kalten Wasser in großen Mengen zur Unzeit.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="1,5">
-               <p n="5">
-                  <lb n="27"/>
-                  <note type="marginal">5</note>Dass auch melancholische Niedergeschlagenheit entsteht, wenn sie (die Milz) einen 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="1,5">
+                  <p n="5">
+                     <lb n="27"/>Dass auch melancholische Niedergeschlagenheit entsteht, wenn sie (die Milz) einen 
 <lb n="28"/>derartigen Rückstand zum Magenmund hin sendet, ist in der ihn (den Magenmund) 
 <lb n="29"/>betreffenden Darlegung zuvor gesagt worden. Folglich ist es nicht mehr nötig, Weite­
 <lb n="30"/>res darüber zu sagen, da die organischen Leiden der Milz einerseits nicht des theoreti­
 <lb n="31"/>schen Erkennens bedürfen, diejenigen andererseits, die durch die schlechte Mischung 
 <lb n="32"/>bedingt sind, aus den jetzigen und den vorherigen Ausführungen in der Lehre über die 
 <pb n="377"/>
-                  <lb n="1"/>Leberleiden (erkannt werden können). Einige von ihnen sind nach ihren Bezeich­nun­
+                     <lb n="1"/>Leberleiden (erkannt werden können). Einige von ihnen sind nach ihren Bezeich­nun­
 <lb n="2"/>gen aufgeführt, einige aber treten in gleicher Weise wie jene auf und werden daher als 
 <lb n="3"/>gleiche erkannt werden. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,1">
-               <p n="1">
-                  <lb n="4"/>
-                  <note type="marginal">1</note>2. Ich habe schon zuvor etwas über die Leiden des Magens gesagt, wobei ich ihn in 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,1">
+                  <p n="1">
+                     <lb n="4"/>2. Ich habe schon zuvor etwas über die Leiden des Magens gesagt, wobei ich ihn in 
 <lb n="5"/>meiner Darlegung in zwei sehr große Teile eingeteilt habe, den ersten oberen (Teil), der 
 <lb n="6"/>mit der Speiseröhre zusammenhängt und mit einem Geflecht aus vielen wahrneh­
 <lb n="7"/>mungsfähigen Nerven durchzogen ist, und den anderen, der diesen bis zum Darm­
 <lb n="8"/>austritt fortsetzt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,2">
-               <p n="2">
-                  <lb n="9"/>
-                  <note type="marginal">2</note>Wie bei den Lebewesen jedem dieser beiden Teile ein eigentümlicher Nutzen inhä­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,2">
+                  <p n="2">
+                     <lb n="9"/>Wie bei den Lebewesen jedem dieser beiden Teile ein eigentümlicher Nutzen inhä­
 <lb n="10"/>rent ist und sich entsprechend dem Nutzen auch die Symptome unterscheiden, auf 
 <lb n="11"/>dieselbe Weise sind auch alle Leiden, die den homoiomeren und den organischen Kör­
 <lb n="12"/>perteilen gemeinsam sind, diesen miteinander gemeinsam und mit dem gesam­ten 
@@ -159,26 +199,24 @@
 <lb n="14"/>zueinander, sondern auch bei denen, die sie berühren, wie bei den Nieren zum Dick­
 <lb n="15"/>darm. Einige (Leiden) lassen nun den erkrankten Körperteil leicht erkennen, wie die 
 <lb n="16"/>Ruhr und der schmerzhafte Stuhldrang. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,3">
-               <p n="3">
-                  <lb n="17"/>
-                  <note type="marginal">3</note>In der vorliegenden Darlegung aber müsst ihr über die im eigentlichen Sinn ge­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,3">
+                  <p n="3">
+                     <lb n="17"/>In der vorliegenden Darlegung aber müsst ihr über die im eigentlichen Sinn ge­
 <lb n="18"/>nannte Ruhr hören, da diese Bezeichnung ein Geschwür der Därme anzeigt. Dieses 
 <lb n="19"/>Leiden tritt nämlich nicht auf einmal ein wie das andere, bei dem, wie wir sagten, die 
 <lb n="20"/>Leber leidet, und eigene Kennzeichen gehen mit ihm einher. Am Anfang nun kommt 
 <lb n="21"/>es bei ihm reichlich zur Ausscheidung von beißender Galle, nach dieser folgen abge­
 <lb n="22"/>schabte Fetzen der Därme. Dann wird eine kleine Menge Blut mitausgeschieden, wenn 
 <lb n="23"/>das Leiden bereits eine Ruhr ist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,4">
-               <p n="4">
-                  <lb n="24"/>
-                  <note type="marginal">4</note>Wenn nun diese abgeschabten Fetzen allein abgehen, muss man darauf achten, ob 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,4">
+                  <p n="4">
+                     <lb n="24"/>Wenn nun diese abgeschabten Fetzen allein abgehen, muss man darauf achten, ob 
 <lb n="25"/>etwas Fettiges mit ihnen zusammen ausgeschieden wird; denn so dürfte es sich um ein 
 <lb n="26"/>Geschwür des Dickdarms handeln. Wenn aber das Blut bereits mitausgeschieden wird, 
 <lb n="27"/>muss man untersuchen, ob es mit allem anderen vollständig vermischt ist oder ob es 
@@ -187,27 +225,25 @@
 <lb n="30"/>aber (deutet auf ein Geschwür) in den niedrigeren Därmen. Man sieht, dass dies auch 
 <lb n="31"/>bei den Ausscheidungen geschieht, die abgeschabte Fetzen enthalten, jedoch weniger 
 <pb n="379"/>
-                  <lb n="1"/>deutlich als beim Blut. Ebenso auch wenn Schorf ausgeschieden wird, wird er zeigen, 
+                     <lb n="1"/>deutlich als beim Blut. Ebenso auch wenn Schorf ausgeschieden wird, wird er zeigen, 
 <lb n="2"/>von welchen Därmen er kommt, aufgrund seiner eigenen Substanz selbst und auch 
 <lb n="3"/>aufgrund der Vermischung mit den Ausscheidungen oder weil er auf deren Ober­fläche 
 <lb n="4"/>schwimmt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,5">
-               <p n="5">
-                  <lb n="5"/>
-                  <note type="marginal">5</note>Es macht keinen geringen Unterschied in der Therapie, ob erkannt worden ist, in 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,5">
+                  <p n="5">
+                     <lb n="5"/>Es macht keinen geringen Unterschied in der Therapie, ob erkannt worden ist, in 
 <lb n="6"/>welchem Teil der Därme das Geschwür ist. Die (Geschwüre) in den höheren (Därmen) 
 <lb n="7"/>haben Nutzen von Heilmitteln, die heruntergeschluckt werden, die in den niedrigeren 
 <lb n="8"/>(Därmen) haben Nutzen von eingeführten (Heilmitteln). </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,6">
-               <p n="6">
-                  <lb n="9"/>
-                  <note type="marginal">6</note>Solche Arten von Ruhr werden von den Ausscheidungen, die von der Leber her­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,6">
+                  <p n="6">
+                     <lb n="9"/>Solche Arten von Ruhr werden von den Ausscheidungen, die von der Leber her­
 <lb n="10"/>rühren, dadurch abgegrenzt, dass bei den von der Leber herrührenden am Anfang 
 <lb n="11"/>eine dünne Blutflüssigkeit ausgeschieden wird, danach mit zunehmendem Leiden ein 
 <lb n="12"/>dickflüssiger Saft, ähnlich dem Bodensatz beim Wein; und (sie unterscheiden sich) 
@@ -217,13 +253,12 @@
 <lb n="16"/>mer ausscheiden als zuvor. Allerdings geschieht dies offensichtlich nicht so bei den 
 <lb n="17"/>Geschwüren der Därme; denn die Ausscheidungen kommen weder auf einmal noch 
 <lb n="18"/>in langen Zeitabständen vor. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,7">
-               <p n="7">
-                  <lb n="19"/>
-                  <note type="marginal">7</note>Die Geschwüre im Bereich des Mastdarms, die man Tenesmen nennt, bringen zwar 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,7">
+                  <p n="7">
+                     <lb n="19"/>Die Geschwüre im Bereich des Mastdarms, die man Tenesmen nennt, bringen zwar 
 <lb n="20"/>heftige Spannungen und starken (Stuhl-)Drang mit sich, die Ausscheidungen sind 
 <lb n="21"/>aber wenige, am Anfang schleimig und fettig, im Laufe der Zeit aber enthalten sie 
 <lb n="22"/>abge­schabte Fetzen. Alles dieses scheint die ganze Zeit unvermischt mit den 
@@ -232,27 +267,25 @@
 <lb n="25"/>manche (Patien­ten) tuffsteinartige Steine ausscheiden, ähnlich denjenigen, die sich in 
 <lb n="26"/>der Harnblase bilden, etwas, was ich weder selbst gesehen noch von irgendeinem 
 <lb n="27"/>anderen, der es gesehen hatte, gehört habe. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,8">
-               <p n="8">
-                  <lb n="28"/>
-                  <note type="marginal">8</note>Oft habe ich einen (Patienten mit einem) heftigen Schmerz im Dickdarm gesehen, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,8">
+                  <p n="8">
+                     <lb n="28"/>Oft habe ich einen (Patienten mit einem) heftigen Schmerz im Dickdarm gesehen, 
 <lb n="29"/>von dem die Ärzte meinten, er würde nicht vom Dickdarm, sondern von den Nieren 
 <lb n="30"/>kommen, so wie ja auch die Nieren zum Dickdarm aufsteigen. Einige von ihnen aber 
 <lb n="31"/>glaubten, dass der Zustand einer Kolik niemals in den linken Teilen entsteht. Nun sind 
 <lb n="32"/>die Leiden am Anfang etwas schwer zu differenzieren, und in dieser Zeit bedarf es 
 <lb n="33"/>auch nicht einer großen Differenzierung der Heilmittel. Freilich muss man auch dann 
 <lb n="34"/>die vorherrschenden Symptome betrachten. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,9">
-               <p n="9">
-                  <pb n="381"/>
-                  <lb n="1"/>
-                  <note type="marginal">9</note>Übelkeit nämlich zusammen mit Erbrechen ist viel stärker und kontinuierlicher 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,9">
+                  <p n="9">
+                     <pb n="381"/>
+                     <lb n="1"/>Übelkeit nämlich zusammen mit Erbrechen ist viel stärker und kontinuierlicher 
 <lb n="2"/>bei denjenigen, die im Bereich des Dickdarms Schmerzen haben; und es wird bei die­
 <lb n="3"/>sen mehr Schleimiges und Zersetztes erbrochen, und die Exkremente werden mehr 
 <lb n="4"/>zurückgehalten, zugleich wird nicht einmal ein (Darm-)Wind abgesondert, noch 
@@ -266,13 +299,12 @@
 <lb n="12"/>Urin untersuchen. Am Anfang nämlich ist der Urin bei den Nierenkranken sehr wäss­
 <lb n="13"/>rig und klar, so wie er in den folgenden Tagen (zunächst) raue, dann vollkommen 
 <lb n="14"/>sandige Ablagerungen aufweist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,10">
-               <p n="10">
-                  <lb n="15"/>
-                  <note type="marginal">10</note>Wenn bei den Koliken vom Magen einmal etwas abgeht, wird der Stuhl irgendwie 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,10">
+                  <p n="10">
+                     <lb n="15"/>Wenn bei den Koliken vom Magen einmal etwas abgeht, wird der Stuhl irgendwie 
 <lb n="16"/>mit Blähungen ausgeschieden und oft im Wasser transportiert, in der Konsistenz dem 
 <lb n="17"/>Rinderdung ähnlich. Aber die Kolikanfälle werden auch durch entspannende Einläufe 
 <lb n="18"/>eher beruhigt als die Nierenkoliken. Bisweilen aber, wenn irgendein kalter Saft zusam­
@@ -283,28 +315,26 @@
 <lb n="23"/>sen ausgeschiedene Stein sowohl vom Schmerz als auch zeigt er den erkrankten Kör­
 <lb n="24"/>perteil an, sodass man künftig Vorsorge treffen kann, dass sie (die Körperteile) schwer­
 <lb n="25"/>lich von diesen Leiden befallen werden. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,11">
-               <p n="11">
-                  <lb n="26"/>
-                  <note type="marginal">11</note>Denn so wie beide Körperteile bei den Schmerzen derselben therapeutischen Maß­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,11">
+                  <p n="11">
+                     <lb n="26"/>Denn so wie beide Körperteile bei den Schmerzen derselben therapeutischen Maß­
 <lb n="27"/>nahmen bedürfen, so (bedürfen sie) in der Zeit danach unterschiedlicher Maßnah­
 <lb n="28"/>men. Deswegen müssen wir auch annehmen, dass wir bezüglich der Therapie keinen 
 <lb n="29"/>Schaden davon haben, dass ihr (erstes) Einsetzen schwer zu differenzieren ist. Denn sie 
 <lb n="30"/>brauchen zu diesem Zeitpunkt keine unterschiedlichen therapeutischen Maßnahmen, 
 <lb n="31"/>weder von außen noch von innen, sondern die beruhigenden (Maßnahmen) genügen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,12">
-               <p n="12">
-                  <lb n="32"/>
-                  <note type="marginal">12</note>Da alle Därme nach dem Magen angeordnet sind – der Leerdarm ist an höchster 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,12">
+                  <p n="12">
+                     <lb n="32"/>Da alle Därme nach dem Magen angeordnet sind – der Leerdarm ist an höchster 
 <lb n="33"/>Stelle, an ihn schließt der sogenannte „Dünndarm“ an, nach welchem sich einerseits 
 <pb n="383"/>
-                  <lb n="1"/>der Blinddarm zu den unteren (Körper-)Regionen erstreckt, der Dickdarm anderer­
+                     <lb n="1"/>der Blinddarm zu den unteren (Körper-)Regionen erstreckt, der Dickdarm anderer­
 <lb n="2"/>seits zu der oberen Gegend aufsteigt, bis er oftmals an Leber und Milz befestigt ist –, 
 <lb n="3"/>überkam mich Verwunderung darüber, dass nicht nur beinahe alle Ärzte, sondern 
 <lb n="4"/>auch die Laien überzeugt wurden zu glauben, dass die heftigsten Schmerzen, an wel­
@@ -312,13 +342,12 @@
 <lb n="6"/>zwar nun auch mir am wahrscheinlichsten zu sein, jedoch weil ich auch nach der Ursa­
 <lb n="7"/>che des heftigen und zugleich bleibenden Schmerzes geforscht habe, und nicht einfach 
 <lb n="8"/>weil ich durch diejenigen überzeugt wurde, die (diese Meinung) geäußert haben. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,13">
-               <p n="13">
-                  <lb n="9"/>
-                  <note type="marginal">13</note>Denn es ist nicht so wie bei den starken Schmerzen, die in den Nieren und Harn­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,13">
+                  <p n="13">
+                     <lb n="9"/>Denn es ist nicht so wie bei den starken Schmerzen, die in den Nieren und Harn­
 <lb n="10"/>leitern beim Durchgang (des Urins) entstehen, wenn Steine sie (wie Keile) verschlie­
 <lb n="11"/>ßen, dass man so mit guten Grund annehmen könnte, dass die enthaltenen kalten 
 <lb n="12"/>Winde und die ihnen ähnlichen Säfte den Schmerz bewirken. Die Körpersubstanz 
@@ -330,30 +359,28 @@
 <lb n="18"/>eingeschlossen wird, andererseits langanhaltend, weil sie nicht leicht entleert werden 
 <lb n="19"/>kann, da sie durch die Dicke und Dichte der Körper, die sie enthalten, (daran) gehin­
 <lb n="20"/>dert wird.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,14">
-               <p n="14">
-                  <lb n="21"/>
-                  <note type="marginal">14</note>Auch andere äußerst heftige Schmerzen entstehen in den oberen Partien der 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,14">
+                  <p n="14">
+                     <lb n="21"/>Auch andere äußerst heftige Schmerzen entstehen in den oberen Partien der 
 <lb n="22"/>Därme, ziemlich reißende mit Erbrechen, sodass einige am Ende Kot erbrechen, ein 
 <lb n="23"/>Leiden, dem sehr selten jemand entkommen ist; manche nennen es Darmverschluss, 
 <lb n="24"/>wie es andere „Chardapsos“ (nennen), immer wenn eine Schwellung in der Gegend 
 <lb n="25"/>des Dünndarms vorspringt, sodass es scheint, der Darm sei herumgedreht wie irgend­
 <lb n="26"/>eine Saite (Chorde).  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,15">
-               <p n="15">
-                  <lb n="27"/>
-                  <note type="marginal">15</note>Den Ärzten vor uns schien naheliegend, dass derartige Leiden des Dünndarms ent­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,15">
+                  <p n="15">
+                     <lb n="27"/>Den Ärzten vor uns schien naheliegend, dass derartige Leiden des Dünndarms ent­
 <lb n="28"/>weder wegen einer Entzündung oder Verstopfung durch trockenen Kot entstehen. 
 <lb n="29"/>Wenn alles zugleich betroffen ist, Därme und Magen, hat man jedoch verständlicher­
 <lb n="30"/>weise geglaubt, dass andere Symptome auftreten, wie die Lienterie und die sogenann­
 <pb n="385"/>
-                  <lb n="1"/>ten (krankhaften) „Bauchzustände“ (Koliakai), die nicht beißend sind. Die beißenden 
+                     <lb n="1"/>ten (krankhaften) „Bauchzustände“ (Koliakai), die nicht beißend sind. Die beißenden 
 <lb n="2"/>nämlich regen durch das Beißen selbst den ganzen Darm dazu an, sich zu entleeren. 
 <lb n="3"/>Alle dieje­nigen aber, die nicht beißen, folgen auf die fehlende Spannung der Därme, 
 <lb n="4"/>die, weil sie ihren Inhalt nicht einmal für kurze Zeit festhalten können, diesen sofort 
@@ -362,13 +389,12 @@
 <lb n="7"/>Harnblase das, was in sie gelangt, wegen seiner Schärfe und des Beißens kontinuierlich 
 <lb n="8"/>ausscheidet, bisweilen aber, wenn sie sein Gewicht nicht tragen kann, auch wenn es 
 <lb n="9"/>wenig ist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="2,16">
-               <p n="16">
-                  <lb n="10"/>
-                  <note type="marginal">16</note>Die Ursachen, die das Leiden der Lienterie bewirken, sind an anderer Stelle darge­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="2,16">
+                  <p n="16">
+                     <lb n="10"/>Die Ursachen, die das Leiden der Lienterie bewirken, sind an anderer Stelle darge­
 <lb n="11"/>legt, und ihr habt sie gesondert, zudem habe ich sie in den Abhandlungen Über die 
 <lb n="12"/>therapeutische Methode, Über die natürlichen Kräfte und noch in den Ursachen der 
 <lb n="13"/>Symptome genannt. Denn jetzt handelt dieses Buch nicht von den Ursachen, die die 
@@ -383,13 +409,12 @@
 <lb n="22"/>der Bauchgegend sieht, und ermöglichen das Erkennen sowohl des Leidens als auch 
 <lb n="23"/>des erkrankten Körperteils. Auch darüber habe ich in den früheren Büchern ausrei­
 <lb n="24"/>chend gesprochen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,1">
-               <p n="3">
-                  <lb n="25"/>
-                  <note type="marginal">3</note>3. Wenn eine Nierenentzündung plötzlich einsetzt, weil ein nennenswerter Stein in 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,1">
+                  <p n="3">
+                     <lb n="25"/>3. Wenn eine Nierenentzündung plötzlich einsetzt, weil ein nennenswerter Stein in 
 <lb n="26"/>einer der Nieren oder den Harnleitern (diese) versperrt, entsteht ein ähnlicher Schmerz 
 <lb n="27"/>wie bei den Koliken; sie lassen sich aber (voneinander) abgrenzen durch die Menge 
 <lb n="28"/>und die Stärke der Übelkeit, wobei das Erbrochene zugleich gallig und schleimhaltig 
@@ -397,15 +422,14 @@
 <lb n="30"/>den Körperteil, wenn der obere Teil des Dickdarms leidet; bisweilen auch dadurch, 
 <lb n="31"/>dass der Schmerz nicht an einem Körperteil fest sitzt, sondern sich dreht und sich auf 
 <pb n="387"/>
-                  <lb n="1"/>mehr (Raum) erstreckt, und dass auch kein Wind (Blähung) entsendet wird. Dies alles 
+                     <lb n="1"/>mehr (Raum) erstreckt, und dass auch kein Wind (Blähung) entsendet wird. Dies alles 
 <lb n="2"/>nämlich tritt bei den Koliken auf, das eine mehr, das andere weniger. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,2">
-               <p n="2">
-                  <lb n="3"/>
-                  <note type="marginal">2</note>Wenn (diese Sachverhalte) aber deutlich abgegrenzt werden, aufgrund dessen, was 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,2">
+                  <p n="2">
+                     <lb n="3"/>Wenn (diese Sachverhalte) aber deutlich abgegrenzt werden, aufgrund dessen, was 
 <lb n="4"/>sich im Urin absetzt, oder auch wenn ein Stein mit dem Urin ausgeschieden ist, dann 
 <lb n="5"/>bleibt keine Frage mehr übrig. Viele Patienten nehmen von Beginn an tief in der 
 <lb n="6"/>Weichengegend einen mäßigen Schmerz wahr, wobei noch nichts Sandiges deutlich 
@@ -413,13 +437,12 @@
 <lb n="8"/>rensteine zerkleinern, gewinne genaue Erkenntnisse sowohl über das Leiden als auch 
 <lb n="9"/>über den erkrankten Körperteil und gestalte den Anfang der Therapie auf dieselbe 
 <lb n="10"/>Weise. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,3">
-               <p n="3">
-                  <lb n="11"/>
-                  <note type="marginal">3</note>Wenn nämlich nach dem Trinken des Heilmittels etwas Sandiges im Urin gefunden 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,3">
+                  <p n="3">
+                     <lb n="11"/>Wenn nämlich nach dem Trinken des Heilmittels etwas Sandiges im Urin gefunden 
 <lb n="12"/>wird, dann habe ich erkannt, dass ein Nierenleiden vorliegt, und anschließend ver­
 <lb n="13"/>abreiche ich dieselben Heilmittel zusammen mit der übrigen Therapie. Wenn aber 
 <lb n="14"/>erkannt ist, dass eine Niere auf diese Weise erkrankt ist, wenn Schmerzen zusammen 
@@ -433,13 +456,12 @@
 <lb n="22"/>mit sich bringt. Deswegen muss man auf jede Art und Weise versuchen, dafür zu 
 <lb n="23"/>sorgen, dass er vernarbt. Wenn nämlich (der Abszess) nicht schnell zu einer Narbe 
 <lb n="24"/>gebracht wird, kann man ihn noch schwerer heilen.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,4">
-               <p n="4">
-                  <lb n="25"/>
-                  <note type="marginal">4</note>Deutliche Zeichen dafür, dass das Geschwür noch erhalten bleibt, finden sich im 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,4">
+                  <p n="4">
+                     <lb n="25"/>Deutliche Zeichen dafür, dass das Geschwür noch erhalten bleibt, finden sich im 
 <lb n="26"/>Urin, und der Patient empfindet oft Schmerz im Bereich der erkrankten Niere. Mit 
 <lb n="27"/>dem Urin wird bisweilen auch ein wenig Eiter ausgeschieden, wie von einem Ge­
 <lb n="28"/>schwür. Ähnlich wird Schorf ausgeschieden, manchmal auch Blut, das anzeigt, dass 
@@ -447,14 +469,13 @@
 <lb n="30"/>Menge platzt oder infolge eines Sturzes oder einer starken Prellung, haben einige 
 <lb n="31"/>reichlich Blut mit dem Urin ausgeschieden. Manchmal geschieht das aber auch, wenn 
 <lb n="32"/>sich eine Vene geöffnet hat.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,5">
-               <p n="5">
-                  <pb n="389"/>
-                  <lb n="1"/>
-                  <note type="marginal">5</note>Der sicherste Beweis für die (Existenz der) Nierengeschwüre selbst sind kleine 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,5">
+                  <p n="5">
+                     <pb n="389"/>
+                     <lb n="1"/>Der sicherste Beweis für die (Existenz der) Nierengeschwüre selbst sind kleine 
 <lb n="2"/>Fleischteilchen, die mit dem Urin zusammen abgehen; es handelt sich um Teile der 
 <lb n="3"/>Nierensubstanz, die bei zunehmender Arrosion aus dem Geschwür ausgewaschen 
 <lb n="4"/>wer­den. Diese Haaren ähnelnden Teilchen sah auch Hippokrates zusammen mit 
@@ -476,13 +497,12 @@
 <lb n="20"/>beinahe alle, denen dieses Leiden widerfahren ist, hatten weder vorher ein Symptom 
 <lb n="21"/>einer Nierenerkrankung noch kam es unmittelbar danach, da sie durch die harntrei­
 <lb n="22"/>benden Heilmittel behandelt wurden.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,6">
-               <p n="6">
-                  <lb n="23"/>
-                  <note type="marginal">6</note>Selbst jedoch wenn irgendwelche anderen schädlichen Säfte aus den Venen ausges­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,6">
+                  <p n="6">
+                     <lb n="23"/>Selbst jedoch wenn irgendwelche anderen schädlichen Säfte aus den Venen ausges­
 <lb n="24"/>chieden werden, habe ich nicht gesehen, dass durch sie die Nieren oder die Harnblase 
 <lb n="25"/>oder die Harnleiter betroffen waren, so wie es auch nicht der Fall ist, wenn man mit 
 <lb n="26"/>dem Harn sehr viel Eiter ausscheidet, sondern in dieser Hinsicht ist die Lage ähnlich, 
@@ -490,14 +510,13 @@
 <lb n="28"/>den der Leber, obwohl sie von der unvermischten Galle geschädigt werden, wie die 
 <lb n="29"/>Harnblase wiederum durch den langanhaltenden Durchgang des scharfen Harns ein 
 <lb n="30"/>Geschwür bekommt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,7">
-               <p n="7">
-                  <pb n="391"/>
-                  <lb n="1"/>
-                  <note type="marginal">7</note>Es gibt aber auch ein anderes Nierenleiden, bei dem eine dünne Blutflüssigkeit mit 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,7">
+                  <p n="7">
+                     <pb n="391"/>
+                     <lb n="1"/>Es gibt aber auch ein anderes Nierenleiden, bei dem eine dünne Blutflüssigkeit mit 
 <lb n="2"/>dem Urin abgeht, ähnlich den Exkrementen, die zu Beginn der Leberkrankheiten auf­
 <lb n="3"/>treten, nur dass sie ein bisschen blutiger aussieht. Dies passiert sowohl wegen eines 
 <lb n="4"/>ähnlichen Zustandes in den Nieren, wie wir die fehlende Spannung der Leber be­
@@ -511,13 +530,12 @@
 <lb n="12"/>schnell wieder ausschieden, wie sie es getrunken hatten. Auch dieses Leiden an den 
 <lb n="13"/>Nieren und der Harnblase ist wiederum ähnlich wie die Lienterie im Magen und in 
 <lb n="14"/>den Därmen.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,8">
-               <p n="8">
-                  <lb n="15"/>
-                  <note type="marginal">8</note>Über die Lienterie habe ich gesondert geschrieben, wobei ich zeigte, dass nicht nur 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,8">
+                  <p n="8">
+                     <lb n="15"/>Über die Lienterie habe ich gesondert geschrieben, wobei ich zeigte, dass nicht nur 
 <lb n="16"/>der Magen, sondern auch der ganze Darm schnell die Ausscheidung der verzehrten 
 <lb n="17"/>Speisen und Getränke betreiben, weil sie nicht einmal für kurze Zeit beschwerdefrei 
 <lb n="18"/>ihre Last oder ihre Beschaffenheit ertragen können. Aber für den reichlichen und 
@@ -531,14 +549,13 @@
 <lb n="26"/>Gegenden des Magens weder aufgrund der fehlenden Spannung der Leber noch der 
 <lb n="27"/>Venen im Bereich des Mesenteriums noch (der Venen) der Leber stattfindet, wie auch 
 <lb n="28"/>nicht (die Verteilung stattfindet) von den (Venen) der Leber zu den Nieren.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,9">
-               <p n="9">
-                  <pb n="393"/>
-                  <lb n="1"/>
-                  <note type="marginal">9</note>Wir haben nämlich auch in den Büchern Über die natürlichen Kräfte gezeigt, dass 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,9">
+                  <p n="9">
+                     <pb n="393"/>
+                     <lb n="1"/>Wir haben nämlich auch in den Büchern Über die natürlichen Kräfte gezeigt, dass 
 <lb n="2"/>die Leber die Nahrung aus dem Magen durch die im Mesaraion befindlichen Venen in 
 <lb n="3"/>sich zieht, wie die Bäume die (Nahrung) aus der Erde durch die Wurzeln an sich zie­
 <lb n="4"/>hen. Es wurde aber auch gezeigt, dass die Nieren das Wässrige im Blut (an sich) ziehen, 
@@ -547,13 +564,12 @@
 <lb n="7"/>(den Harn) ausscheiden, (ihn) in die Blase durch die Harnleiter senden, der Magen 
 <lb n="8"/>aber (seinen Inhalt) in den Leerdarm durch den Ausgang sendet, den Hero­philos 
 <lb n="9"/>Zwölffingerdarm nannte, wobei er ihm den Namen nach seiner Länge gab.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,10">
-               <p n="10">
-                  <lb n="10"/>
-                  <note type="marginal">10</note>Folglich könnte man die fehlende Spannung der Nieren (dafür) verantwortlich ma­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,10">
+                  <p n="10">
+                     <lb n="10"/>Folglich könnte man die fehlende Spannung der Nieren (dafür) verantwortlich ma­
 <lb n="11"/>chen, wenn sie den Urin nicht mehr in sich festhalten können, aber wahrhaftig nicht 
 <lb n="12"/>(die fehlende Spannung) der anderen Teile, durch die das Getrunkene hindurch­geht. 
 <lb n="13"/>Aber wenn man wiederum den Nieren die Schuld gäbe, weil ihnen (angeblich) die 
@@ -562,40 +578,37 @@
 <lb n="16"/>steht, auf dieselbe Weise entsteht zugleich bei den Nieren ein heftiges Begehren und 
 <lb n="17"/>deswegen ziehen sie den Urin durch die hohle Vene in sich hinein, werden jedoch so­
 <lb n="18"/>fort beschwert durch das Ungestüm des Ziehens?  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,11">
-               <p n="11">
-                  <lb n="19"/>
-                  <note type="marginal">11</note>Wie wir auch bei dem sogenannten „Hundsappetit“ einige sehen, die sich zwar voll 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,11">
+                  <p n="11">
+                     <lb n="19"/>Wie wir auch bei dem sogenannten „Hundsappetit“ einige sehen, die sich zwar voll 
 <lb n="20"/>essen, aber wenig später erbrechen oder Durchfall bekommen. Dies sieht man nämlich 
 <lb n="21"/>nicht nur bei (Menschen), die in einem widernatürlichen Zustand sind, sondern auch 
 <lb n="22"/>bei einigen Tieren, die tadellos gesund sind, wie bei den Vögeln, die man bei uns in 
 <lb n="23"/>Asien Seleukiden nennt. Diese nämlich essen den ganzen Tag unersättlich Heu­
 <lb n="24"/>schrecken und scheiden sie schnell wieder aus. Aber auch bei anderen Tieren scheint 
 <lb n="25"/>das derartige Symptom natürlich zu sein. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,12">
-               <p n="12">
-                  <lb n="26"/>
-                  <note type="marginal">12</note>So wie nun am Magenmund der Hundsappetit entsteht, in Verbindung mit der 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,12">
+                  <p n="12">
+                     <lb n="26"/>So wie nun am Magenmund der Hundsappetit entsteht, in Verbindung mit der 
 <lb n="27"/>Tatsache, dass der Magen die Last der heruntergeschluckten (Speisen) nicht erträgt, 
 <lb n="28"/>und jemanden zwingt, zwar viel und gierig zu essen, aber schnell (das Gegessene) (wie­
 <lb n="29"/>der) auszuscheiden, auf dieselbe Weise zwingt das Begehren nach der molkenartigen 
 <lb n="30"/>Feuchtigkeit in den Nieren, zusammen mit der fehlenden Spannung ihrer Kraft, sie 
 <lb n="31"/>sowohl die Flüssigkeit reichlich in sich hineinzuziehen, als auch sie sofort in die Blase 
 <lb n="32"/>hinein abzugeben.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,13">
-               <p n="13">
-                  <pb n="395"/>
-                  <lb n="1"/>
-                  <note type="marginal">13</note>Warum nur, sagt vielleicht jemand, entsteht die Harnruhr zwar plötzlich, die Lien­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,13">
+                  <p n="13">
+                     <pb n="395"/>
+                     <lb n="1"/>Warum nur, sagt vielleicht jemand, entsteht die Harnruhr zwar plötzlich, die Lien­
 <lb n="2"/>terie aber nicht so, wie auch der Hundsappetit nicht, sondern nach mehreren Tagen? 
 <lb n="3"/>Der Beginn nämlich des Leidens und seine Zunahme sowie seine Zunahme und sein 
 <lb n="4"/>Höhepunkt unterscheiden sich (voneinander). Weil der Appetit des Magens auf Speise 
@@ -603,13 +616,12 @@
 <lb n="6"/>det, die Funktion der Nieren aber eine natürliche Funktion ohne unsere Wahrneh­
 <lb n="7"/>mung ist, sodass selbst wenn die Krankheit ihren Höhepunkt erreicht hat, sich davon 
 <lb n="8"/>keine Wahrnehmung einstellt wie beim Hundsappetit.   </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,14">
-               <p n="14">
-                  <lb n="9"/>
-                  <note type="marginal">14</note>Es liegt nun nahe, dass die Krankheit nach und nach beginnt, und wenn sie dann 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,14">
+                  <p n="14">
+                     <lb n="9"/>Es liegt nun nahe, dass die Krankheit nach und nach beginnt, und wenn sie dann 
 <lb n="10"/>stärker wird, zieht sie zuerst aus den Venen den wässrigen Bestandteil (Serum) des Blu­
 <lb n="11"/>tes, ohne dass wir es merken, und wenn sie ihn ganz an sich gezogen hat und das Blut 
 <lb n="12"/>in den Venen trocken und frei von derartiger Feuchtigkeit gemacht hat, (dann) ziehen 
@@ -620,13 +632,12 @@
 <lb n="17"/>fen ihn sofort die trockenen Venen ganz, die von der Leber kommen und in den 
 <lb n="18"/>Magen führen, und von jenen (ergreifen ihn) die anschließenden (Venen), bis die Wei­
 <lb n="19"/>tergabe zu den Nieren gelangt.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,15">
-               <p n="15">
-                  <lb n="20"/>
-                  <note type="marginal">15</note>In den Büchern Über die natürlichen Kräfte ist nämlich gezeigt worden, dass nicht 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,15">
+                  <p n="15">
+                     <lb n="20"/>In den Büchern Über die natürlichen Kräfte ist nämlich gezeigt worden, dass nicht 
 <lb n="21"/>nur der Trank, sondern auch die Nahrung den Impuls auf alle Stellen des Körpers 
 <lb n="22"/>übertragen. Gemäß der Schnelligkeit des Durchgangs ist dieses Leiden der Lienterie 
 <lb n="23"/>ähnlich, und in der Tat auch soweit der Zustand im Bereich der Nieren derselbe ist wie 
@@ -639,14 +650,13 @@
 <lb n="30"/>von Harnruhr. Dass aber einige zu Unrecht meinen, dass die Krankheit Diabetes dem 
 <lb n="31"/>Hundsappetit ähnlich ist, kann man an denen sehen, die wegen heftigen Durstes ihren 
 <lb n="32"/>Magen füllen, aber das Getrunkene am meisten in ihm (Magen) bleibt.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,16">
-               <p n="16">
-                  <pb n="397"/>
-                  <lb n="1"/>
-                  <note type="marginal">16</note>Diese vier Symptome folgen nämlich auf das Trinken beim starken Durst: das erste 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,16">
+                  <p n="16">
+                     <pb n="397"/>
+                     <lb n="1"/>Diese vier Symptome folgen nämlich auf das Trinken beim starken Durst: das erste 
 <lb n="2"/>ist das Erbrechen; das zweite ist die schnelle Ausscheidung durch den Unter­bauch 
 <lb n="3"/>beim Durchfall und der Lienterie; ein drittes unterschiedliches Symptom ist der sehr 
 <lb n="4"/>lange Verbleib (der Speisen) im Magen; und das vierte ist eben dies, worüber jetzt die 
@@ -654,13 +664,12 @@
 <lb n="6"/>Denn wir untersuchen es nicht, um ihm einen passenden Namen zu geben, sondern 
 <lb n="7"/>damit wir aufgrund des erkrankten Körperteils und des Zustands in ihm Anhalts­
 <lb n="8"/>punkte für seine Behandlung finden.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,17">
-               <p n="17">
-                  <lb n="9"/>
-                  <note type="marginal">17</note>Es gibt ein anderes Leiden, das diesem Diabetes genau ähnelt und wegen der gro­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,17">
+                  <p n="17">
+                     <lb n="9"/>Es gibt ein anderes Leiden, das diesem Diabetes genau ähnelt und wegen der gro­
 <lb n="10"/>ßen Menge der Speisen auftritt, wenn sie weder verdaut werden noch abgehen noch 
 <lb n="11"/>Fülle oder Wohlgenährtsein bewirken, sondern sich offensichtlich schnell zer­streuen 
 <lb n="12"/>(verteilen). Aber es ist weder so selten wie der unmäßige Durst (Dipsakos) noch so 
@@ -672,13 +681,12 @@
 <lb n="18"/>ses Leiden wiederum beginnt logischerweise mit schnellem Schwitzen wobei alle Kör­
 <lb n="19"/>perteile die anziehende Kraft zusammen mit der mit ihr gekoppelten Kraft bewahren, 
 <lb n="20"/>welche die spezielle Bezeichnung „begehrende (appeti­tive) Kraft“ trägt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,18">
-               <p n="18">
-                  <lb n="21"/>
-                  <note type="marginal">18</note>Die Ursache jedoch für heftigen Durst ohne Diabetes ist der Magen, wenn er an 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,18">
+                  <p n="18">
+                     <lb n="21"/>Die Ursache jedoch für heftigen Durst ohne Diabetes ist der Magen, wenn er an 
 <lb n="22"/>einer warmen oder trockenen schlechten Mischung leidet oder auch an beiden zu­
 <lb n="23"/>gleich, und zwar besonders der Magenmund. Die zweite (Ursache) nach dem Magen 
 <lb n="24"/>ist die Leber, insbesondere ihre konkaven Teile, weil mit ihnen offensichtlich die Teile 
@@ -687,33 +695,31 @@
 <lb n="27"/>artigen Symptoms entsteht bisweilen wegen eines rosenartigen Zustands, wenn (die 
 <lb n="28"/>Teile) erhitzt werden, auf die im Allgemeinen bald dieser, bald ein anderer Kräfte­
 <lb n="29"/>schwund (Marasmus) folgt, wie in der Rede über ihn dargelegt worden ist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,19">
-               <p n="19">
-                  <lb n="30"/>
-                  <note type="marginal">19</note>Diese (Leiden) sind nun wegen der Gemeinsamkeit der Symptome zusammen mit 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,19">
+                  <p n="19">
+                     <lb n="30"/>Diese (Leiden) sind nun wegen der Gemeinsamkeit der Symptome zusammen mit 
 <lb n="31"/>den Nierenleiden dargelegt worden.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="3,20">
-               <p n="20">
-                  <lb n="32"/>
-                  <note type="marginal">20</note>Der Diabetes aber ist ein eigentümliches Leiden der Nieren selbst, er ist dem 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="3,20">
+                  <p n="20">
+                     <lb n="32"/>Der Diabetes aber ist ein eigentümliches Leiden der Nieren selbst, er ist dem 
 <lb n="33"/>Hundsappetit im Bereich des Magenmundes analog und geht mit der fehlenden Span­
 <lb n="34"/>nung der festhaltenden Kraft einher. Wenn wir nämlich behaupten, dass es ohne hefti­
 <pb n="399"/>
-                  <lb n="1"/>gen Appetit auftritt, wird zuerst auch keine nennenswerte Urinmenge zu den Nieren 
+                     <lb n="1"/>gen Appetit auftritt, wird zuerst auch keine nennenswerte Urinmenge zu den Nieren 
 <lb n="2"/>gelangen. Wenn es aber ohne fehlende Spannung der festhaltenden Kraft auftritt, wird 
 <lb n="3"/>kein schnelles Harnlassen folgen.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,1">
-               <p>
-                  <lb n="4"/>4. Es gibt Symptome im Bereich der Blase, die mit den anderen gemeinsam sind, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,1">
+                  <p>
+                     <lb n="4"/>4. Es gibt Symptome im Bereich der Blase, die mit den anderen gemeinsam sind, 
 <lb n="5"/>alle widernatürlichen Geschwülste der Blase, Schmerzen und die Krankheiten, die die­
 <lb n="6"/>se verursachen. Die anderen (Symptome) sind ihr allein eigentümlich, Harnverhal­tung 
 <lb n="7"/>und tropfenweise Harnausscheidung und auf eine andere Weise die übermäßigen Aus­
@@ -726,26 +732,24 @@
 <lb n="14"/>Nierenleidens, bald aber wegen eines anderen von den Körperteilen, die ihre eigenen 
 <lb n="15"/>schlechten Säfte in den Urin senden können oder den Eiter, wenn sie an einem Abs­
 <lb n="16"/>zess leiden.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,2">
-               <p n="2">
-                  <lb n="17"/>
-                  <note type="marginal">2</note>Manchmal entsteht (dieses Leiden) auch wegen der Säfte in den Venen, die durch 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,2">
+                  <p n="2">
+                     <lb n="17"/>Manchmal entsteht (dieses Leiden) auch wegen der Säfte in den Venen, die durch 
 <lb n="18"/>die Nieren und die Blase ausgeschieden werden. Wenn die Blase aber infolge einer 
 <lb n="19"/>schlechten Mischung schwach ist, wird sie geschädigt in ihrer eigenen Funktion, die 
 <lb n="20"/>darin besteht, den Urin auszuscheiden, zu der das Lebewesen getrieben wird, wenn es 
 <lb n="21"/>entweder durch die große Menge der enthaltenen Substanz beschwert wird oder wenn 
 <lb n="22"/>sie belastet wird, weil die Substanz beißt. Beide Umstände verursachen bei den schwa­
 <lb n="23"/>chen (Blasen) mehr Schmerzen als bei den starken. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,3">
-               <p n="3">
-                  <lb n="24"/>
-                  <note type="marginal">3</note>Die Schwäche aber entsteht manchmal sowohl wegen organischer Leiden als auch 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,3">
+                  <p n="3">
+                     <lb n="24"/>Die Schwäche aber entsteht manchmal sowohl wegen organischer Leiden als auch 
 <lb n="25"/>wegen der anderen schlechten Mischungen, die vielen kontinuierlich zustoßen, wenn 
 <lb n="26"/>sie abgekühlt sind. Denn die Blase wird dann offensichtlich beschwert, auch wenn in 
 <lb n="27"/>ihr wenig Flüssigkeit enthalten ist. Da die Blase ein Organ der Harnausscheidung ist, 
@@ -755,18 +759,17 @@
 <lb n="31"/>stopft ist oder weil ein Stein ihn versperrt; bisweilen aber auch wegen einer Entzün­
 <lb n="32"/>dung oder einer anderen derartigen Geschwulst, die den Gang verengt oder sogar voll­
 <lb n="33"/>kom­men versperrt hat. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,4">
-               <p n="4">
-                  <lb n="34"/>
-                  <note type="marginal">4</note>In der Tat liegt es nicht an einer Erkrankung der vom Rückenmark ausgehenden 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,4">
+                  <p n="4">
+                     <lb n="34"/>In der Tat liegt es nicht an einer Erkrankung der vom Rückenmark ausgehenden 
 <lb n="35"/>Nerven oder des Rückenmarks selbst, dass die fehlende Spannung der Blase entsteht, 
 <lb n="36"/>wegen der die Harnverhaltung folgt, wie manche glauben, die die Meinung vertreten, 
 <lb n="37"/>die Funktion der Blase sei willentlich, da wir den Urin zurückhalten, solange wir wol­
 <pb n="401"/>
-                  <lb n="1"/>len, und wir ihn ausscheiden, wenn wir uns (dazu) entschließen. Es wäre besser, wenn 
+                     <lb n="1"/>len, und wir ihn ausscheiden, wenn wir uns (dazu) entschließen. Es wäre besser, wenn 
 <lb n="2"/>sie erkannt hätten, dass nicht die Funktion der Blase, sondern die (Funktion) der Har­
 <lb n="3"/>nausscheidung willentlich ist, wie auch die Funktion der Stuhlausscheidung (wil­lent­
 <lb n="4"/>lich ist), aber nicht die Funktion der Därme. Der Muskel, der den Harnleiter im Kreis 
@@ -777,13 +780,12 @@
 <lb n="9"/>deswegen, wenn diese (Muskeln) gelähmt sind, wird weder Urin in der Blase zurück­
 <lb n="10"/>gehalten, noch Stuhl im After, sondern beides fließt ein wenig heraus ohne unseren 
 <lb n="11"/>Willen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,5">
-               <p n="5">
-                  <lb n="12"/>
-                  <note type="marginal">5</note>Wie aber bei den anderen Muskeln das, was die Lähmung unwillentlich bewirkt, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,5">
+                  <p n="5">
+                     <lb n="12"/>Wie aber bei den anderen Muskeln das, was die Lähmung unwillentlich bewirkt, 
 <lb n="13"/>das bewirkt unser Wille willentlich, aus demselben Grund hören wir auf, die Aktivität 
 <lb n="14"/>auszuüben bei diesen Dingen, wenn wir Stuhl oder Urin ausscheiden wollen. Wie eini­
 <lb n="15"/>ge geglaubt haben, dass es sich bei der Ausscheidung des Urins und der Nahrungs­
@@ -793,31 +795,29 @@
 <lb n="19"/>Denn zwar ist das Herausdrücken der Nahrung aus dem Magen in den Leerdarm eine 
 <lb n="20"/>gänzlich natürliche Funktion, eine gänzlich wiederum willentliche Funktion ist die 
 <lb n="21"/>Streckung und Beugung von beiden Gliedmaßen, und von jedem der Finger. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,6">
-               <p n="6">
-                  <lb n="22"/>
-                  <note type="marginal">6</note>Die Bewegung nämlich aus dem Magen in Richtung Leerdarm sowie freilich auch 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,6">
+                  <p n="6">
+                     <lb n="22"/>Die Bewegung nämlich aus dem Magen in Richtung Leerdarm sowie freilich auch 
 <lb n="23"/>die (Bewegung) durch jenen (Leerdarm) zum Dünndarm geschieht aufgrund allein 
 <lb n="24"/>einer natürlichen Kraft. Die Abgabe von Stuhl und Harn wird ausgeführt, wenn beide 
 <lb n="25"/>Organe zusammen mit den (ihnen) eigenen Kräften ihre Funktion ausüben. Bei dem 
 <lb n="26"/>Mastdarm und der Blase (wird es ausgeführt) von den natürlichen Kräften, bei den 
 <lb n="27"/>Muskeln aber von den so bezeichneten seelischen und willentlichen (Kräften) </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,7">
-               <p n="7">
-                  <lb n="28"/>
-                  <note type="marginal">7</note>Denn die den Ausfluss verhindernden Muskeln üben nicht mehr ihre Funktion 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,7">
+                  <p n="7">
+                     <lb n="28"/>Denn die den Ausfluss verhindernden Muskeln üben nicht mehr ihre Funktion 
 <lb n="29"/>aus, die aber im Unterleib üben ihre Funktion aus, insbesondere die mittleren von 
 <lb n="30"/>ihnen. Manchmal legen einige von denen, die Schwierigkeiten mit dem Stuhlgang 
 <lb n="31"/>haben, Hand an und üben mit den Händen Druck aus, sowie sie es bei schwieriger 
 <lb n="32"/>Harnausscheidung und vollständiger Verhaltung (des Harns) zu tun pflegen. Wenn 
 <pb n="403"/>
-                  <lb n="1"/>nun die Nerven erkranken, durch die die seelische Kraft zu den genannten Muskeln 
+                     <lb n="1"/>nun die Nerven erkranken, durch die die seelische Kraft zu den genannten Muskeln 
 <lb n="2"/>gelangt, oder wenn das Rückenmark selbst zufällig geschädigt wird, da die Muskeln in 
 <lb n="3"/>der Ausübung ihrer Funktion gelähmt sind, kommt es zu einer unfreiwilligen Aus­
 <lb n="4"/>scheidung von Harn und Stuhlgang. Wenn aber der Körper der Blase selbst von einem 
@@ -830,26 +830,24 @@
 <lb n="11"/>menzieht, andererseits ihre Funktion ausüben, weil sie ihre eigene Kraft bewahren. 
 <lb n="12"/>Denn wenn sie (die Nerven des Muskels) freilich gelähmt sind, ist die unfreiwillige 
 <lb n="13"/>Ausscheidung von Urin ein eigentümliches Zeichen der Lähmung dieses Muskels. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,8">
-               <p n="8">
-                  <lb n="14"/>
-                  <note type="marginal">8</note>Wenn aber dieses Leiden geschieht und der Gang der Blase versperrt wird, ist es 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,8">
+                  <p n="8">
+                     <lb n="14"/>Wenn aber dieses Leiden geschieht und der Gang der Blase versperrt wird, ist es 
 <lb n="15"/>schwierig, beide Zustände zu erkennen. Nicht nur für das Erkennen dieser (Leiden), 
 <lb n="16"/>sondern auch für das Erkennen sämtlicher anderer Blasenleiden, ist es äußerst notwen­
 <lb n="17"/>dig, die vorangegangenen äußeren Ursachen im Voraus zu kennen, die die Ärzte mit 
 <lb n="18"/>einer eigenen Bezeichnung „veranlassend“ nennen. Vielmehr aber als diese (ist es not­
 <lb n="19"/>wendig zu kennen), die vorangegangenen Erkrankungen im Körper des Lebewesens 
 <lb n="20"/>selbst.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,9">
-               <p n="9">
-                  <lb n="21"/>
-                  <note type="marginal">9</note>Bei der rückwärtigen Krümmung der Wirbelsäule beim Herunterfallen ist es zur 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,9">
+                  <p n="9">
+                     <lb n="21"/>Bei der rückwärtigen Krümmung der Wirbelsäule beim Herunterfallen ist es zur 
 <lb n="22"/>Harnverhaltung gekommen, die gewöhnlich so auftritt, wie auch von Hippokrates 
 <lb n="23"/>dargelegt worden ist: Es kam aber nicht sofort zu Harnverhaltung, sondern um den 
 <lb n="24"/>dritten Tag herum, durch den Druck der inneren verschobenen Wirbel, nachdem sich 
@@ -860,59 +858,54 @@
 <lb n="29"/>Urin unfreiwillig und ohne Blasenschmerz ausgeschieden. Bei ihm sind wir zu dem 
 <lb n="30"/>Schluss gekommen, dass der Nerv des Muskels, der die Blase verschließt, betroffen war, 
 <lb n="31"/>und aus diesem Grund haben wir eine Behandlung für das Rückenmark angewendet. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,10">
-               <p n="10">
-                  <pb n="405"/>
-                  <lb n="1"/>
-                  <note type="marginal">10</note>Bei einem anderen aber, der ein ähnliches Leiden hatte, kam es zur Harnverhal­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,10">
+                  <p n="10">
+                     <pb n="405"/>
+                     <lb n="1"/>Bei einem anderen aber, der ein ähnliches Leiden hatte, kam es zur Harnverhal­
 <lb n="2"/>tung, wobei einerseits infolge der Erkrankung der Nerven eine Wahrnehmungsstö­
 <lb n="3"/>rung die Blase befallen hatte, und andererseits der Mensch im Schlaf nicht wahrnahm, 
 <lb n="4"/>dass seine Blase gefüllt war, und danach, als sie überspannt wurde, (er) nicht mehr aus­
 <lb n="5"/>scheiden konnte. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,11">
-               <p n="11">
-                  <lb n="6"/>
-                  <note type="marginal">11</note>Es geschieht nämlich manchmal, dass auch dies eine Ursache für die Harnverhal­tung 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,11">
+                  <p n="11">
+                     <lb n="6"/>Es geschieht nämlich manchmal, dass auch dies eine Ursache für die Harnverhal­tung 
 <lb n="7"/>wird, wie freilich auch bei anderen Gesunden, die entweder wegen dringender Geschäf­
 <lb n="8"/>te oder bei Versammlungen oder bei Ratssitzungen oder in Gerichtsverhand­lungen 
 <lb n="9"/>oder auch wenn sie nur bei jemandem dinieren, längere Zeit ihren Urin zurückhalten, 
 <lb n="10"/>und nachdem die Blase überdehnt worden war, Harnverhaltung folgte, da ihre zusam­
 <lb n="11"/>menziehende Kraft durch die unmäßige (Muskel-)Spannung gelitten hatte. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,12">
-               <p n="12">
-                  <lb n="12"/>
-                  <note type="marginal">12</note>Als bei einem anderen nach einem Sturz die Wirbelsäule unversehrt blieb, kam es 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,12">
+                  <p n="12">
+                     <lb n="12"/>Als bei einem anderen nach einem Sturz die Wirbelsäule unversehrt blieb, kam es 
 <lb n="13"/>sofort zu einem häufigen Urinieren von Blut. Danach aber (folgte) vollkommene 
 <lb n="14"/>Harnverhaltung. Bei ihm schlussfolgerten wir, dass ein Teil des Bluts verklumpt war; 
 <lb n="15"/>und als wir deshalb einen Katheter angewendet haben, hat er zwar wenig Urin ausge­
 <lb n="16"/>schieden, als aber der Katheter entfernt wurde, zeigte sich an seiner Öffnung ein 
 <lb n="17"/>Kennzeichen der Bildung eines Blutgerinnsels.</p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,13">
-               <p n="13">
-                  <lb n="18"/>
-                  <note type="marginal">13</note>Bei anderen chronischen Schmerzen aber, zusammen mit den Zeichen für die Ent­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,13">
+                  <p n="13">
+                     <lb n="18"/>Bei anderen chronischen Schmerzen aber, zusammen mit den Zeichen für die Ent­
 <lb n="19"/>stehung von Abszessen, wurde, als diese beendet waren, eine dünnflüssige eitrige Sub­
 <lb n="20"/>stanz mit dem Urin ausgeschieden; es folgte aber Harnverhaltung, sodass man schluss­
 <lb n="21"/>folgern konnte, dass dickflüssiger Eiter den Gang verschlossen hatte.</p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,14">
-               <p n="14">
-                  <lb n="22"/>
-                  <note type="marginal">14</note>Bei den Kindern aber, die einen Stein in der Blase haben, haben wir oft beobach­tet, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,14">
+                  <p n="14">
+                     <lb n="22"/>Bei den Kindern aber, die einen Stein in der Blase haben, haben wir oft beobach­tet, 
 <lb n="23"/>dass es zur Harnverhaltung kommt, bei der wir, nachdem wir sie in umgekehrte Kör­
 <lb n="24"/>perstellung gebracht und geschüttelt hatten, bewirkten, dass der Stein vom Gang weg­
 <lb n="25"/>rollte. Nachdem ihr auch dies gesehen habt, was ich sagen werde, verlange ich, dass ihr 
@@ -924,7 +917,7 @@
 <lb n="31"/>an den Muskeln vor, sodass man sich über die Ursache des Vorkommnisses wun­dert, 
 <lb n="32"/>wenn das Blut, was uns vertrautesten von allen ist, die Ursache von so großen Übeln 
 <pb n="407"/>
-                  <lb n="1"/>ist, wenn es sich aus den eigenen Gefäßen ergießt. Darauf folgen nämlich sowohl Fäul­
+                     <lb n="1"/>ist, wenn es sich aus den eigenen Gefäßen ergießt. Darauf folgen nämlich sowohl Fäul­
 <lb n="2"/>nis der Körperteile als auch Absterben. Ich habe aber gesehen, dass auch in einer Blase, 
 <lb n="3"/>in der sich eine Thrombose gebildet hatte, dieselben Symptome folgten: Voran ging 
 <lb n="4"/>bei ihm (Patienten) nämlich die Ausscheidung von einer großen Menge Blut mit Urin, 
@@ -933,25 +926,23 @@
 <lb n="7"/>gab ihm Essighonigtrank selbst zu trinken. Aber obwohl ich dies tat, sind alle anderen 
 <lb n="8"/>gestorben, ein einziger aber wurde gerettet, weil bei ihm die Blut­gerinnsel aufgelöst 
 <lb n="9"/>wurden, und kurz darauf wurden sie mit dem Urin ausgeschieden. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,15">
-               <p n="15">
-                  <lb n="10"/>
-                  <note type="marginal">15</note>Dass die Symptome in der gegenwärtigen Zeit nicht ausreichend sind, um uns 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,15">
+                  <p n="15">
+                     <lb n="10"/>Dass die Symptome in der gegenwärtigen Zeit nicht ausreichend sind, um uns 
 <lb n="11"/>über den erkrankten Körperteil zu (be)lehren, sondern dass oft die Abgrenzung aus 
 <lb n="12"/>dem, was vorher passiert ist, erfolgt, werdet ihr erkennen, wenn ihr euch an das von 
 <lb n="13"/>euch zuvor Gesehene erinnert. Nachdem viele nun oft mit dem Urin Eiter ausgeschie­
 <lb n="14"/>den hatten, wies uns die Erinnerung an die vorangegangenen Symptome auf den er­
 <lb n="15"/>krankten Körperteil hin und zeigte den Zustand in ihm.</p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,16">
-               <p n="16">
-                  <lb n="16"/>
-                  <note type="marginal">16</note>Der eine nämlich hatte früher oft Schmerzen in der Nierengegend, mal stellten sich 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,16">
+                  <p n="16">
+                     <lb n="16"/>Der eine nämlich hatte früher oft Schmerzen in der Nierengegend, mal stellten sich 
 <lb n="17"/>unregelmäßiges Frösteln, mal kleine Schüttelfrostattacken mit Fieber(anfällen) ein, bei 
 <lb n="18"/>dem anderen aber waren gemäß der Lage der Blase zusammen mit dem Frösteln und 
 <lb n="19"/>den Fieber(anfällen) Schmerzen vorangegangen, bei manchen aber (Schmerzen) im 
@@ -962,29 +953,27 @@
 <lb n="24"/>die Tatsache hin, dass er (der Eiter) ganz mit dem Urin vermischt war, wie geschüttelt, 
 <lb n="25"/>oder dass dies (die Vermischung) noch nicht geschehen war, wie bei den Därmen zu­
 <lb n="26"/>vor gesagt worden ist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,17">
-               <p n="17">
-                  <lb n="27"/>
-                  <note type="marginal">17</note>Wie nämlich bei jenen (Därmen), wenn das Transportierte von den höheren Där­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,17">
+                  <p n="17">
+                     <lb n="27"/>Wie nämlich bei jenen (Därmen), wenn das Transportierte von den höheren Där­
 <lb n="28"/>men kommt, ist es mit den Nahrungsrückständen vermischt, gleich den Wiederver­
 <lb n="29"/>mischten, wenn es aber von den niederen (Därmen) kommt, wird jedes einzelne Teil 
 <lb n="30"/>von ihnen mit ausgeschieden. Auf dieselbe Weise ist der gesamte Urin getrübt durch 
 <lb n="31"/>die eitrigen Teile, die mit ihm ausgeschieden werden, oder zerteilt in einzelne Teile, 
 <pb n="409"/>
-                  <lb n="1"/>wird es unregelmäßig transportiert (getragen). Oft aber wird allein der Eiter selbst aus­
+                     <lb n="1"/>wird es unregelmäßig transportiert (getragen). Oft aber wird allein der Eiter selbst aus­
 <lb n="2"/>geschieden ohne Urin. Dies zeigt nun deutlich, dass die Vereiterung im Bereich der 
 <lb n="3"/>Blase selbst entstanden ist. Das, was genau vermischt ist, (zeigt) dass es von oben 
 <lb n="4"/>kommt; das andere, was einen mittleren Zustand hat, (kommt) von den Nieren. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,18">
-               <p n="18">
-                  <lb n="5"/>
-                  <note type="marginal">18</note>In gleicher Weise, auch wenn sich nach dem Platzen des Abszesses irgendein Kenn­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,18">
+                  <p n="18">
+                     <lb n="5"/>In gleicher Weise, auch wenn sich nach dem Platzen des Abszesses irgendein Kenn­
 <lb n="6"/>zei­chen des Geschwürs zeigt zusammen mit dem Erkennen des erkrankten Körper­teils, 
 <lb n="7"/>und auch dieses erscheint bald genau vermischt, bald mäßig oder ohne jegliche Mi­
 <lb n="8"/>schung oder es wird irgendwie transportiert oder geht nur durch. Der sogenannte 
@@ -997,13 +986,12 @@
 <lb n="15"/>tungen vergleichen. Durch den Urin werden nun sowohl die konvexen Teile der Leber 
 <lb n="16"/>als auch sämtliche Körperteile, die oberhalb von ihr angeordnet sind, durch den After 
 <lb n="17"/>aber die konkaven Teile der Leber, die Därme, der Magen und die Milz gereinigt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,19">
-               <p n="19">
-                  <lb n="18"/>
-                  <note type="marginal">19</note>Außerhalb aber von diesen sind alle die, die selten vorkommen, wie z. B. wenn die 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,19">
+                  <p n="19">
+                     <lb n="18"/>Außerhalb aber von diesen sind alle die, die selten vorkommen, wie z. B. wenn die 
 <lb n="19"/>Bereiche im Brustkorb und der Lunge durch den Magen gereinigt werden, und 
 <lb n="20"/>manchmal durch den Urin, die Teile unterhalb des Zwerchfells; da manche die Ursa­
 <lb n="21"/>chen dafür nicht kennen und dann auch nicht gesehen haben, dass sie (Dinge) bei 
@@ -1013,14 +1001,13 @@
 <lb n="25"/>Die räumliche Bewegung von der Lunge zu den Nieren bereitet uns in Wahrheit gar 
 <lb n="26"/>keine Schwierigkeiten, so wie nämlich Ausläufer aus der Hohlvene in die Nieren ein­
 <lb n="27"/>münden, so auch aus der großen Arterie. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="4,20">
-               <p n="20">
-                  <pb n="411"/>
-                  <lb n="1"/>
-                  <note type="marginal">20</note>Da aber Erasistratos meint, dass die Arterien Gefäße der Luft allein seien, stellt 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="4,20">
+                  <p n="20">
+                     <pb n="411"/>
+                     <lb n="1"/>Da aber Erasistratos meint, dass die Arterien Gefäße der Luft allein seien, stellt 
 <lb n="2"/>sich die Frage nur für diejenigen, die ihm geglaubt haben, nicht für uns, da die glatte 
 <lb n="3"/>Arterie der Lunge imstande ist, den Eiter, den sie in sich aus dem geplatzten Abszess 
 <lb n="4"/>aufnimmt, in das linke Ventrikel des Herzens zu transportieren; und dann fällt von 
@@ -1035,13 +1022,12 @@
 <lb n="13"/>Eiter aus den Partien oberhalb des Zwerchfells in den Magen fließt, noch dass er aus den 
 <lb n="14"/>(Partien) unterhalb des Zwerchfells durch die Nieren in die Blase gelangt. Es ist nämlich 
 <lb n="15"/>naheliegend, dass auf seltene Körperkonstitutionen seltene Symptome folgen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,1">
-               <p n="1">
-                  <lb n="16"/>
-                  <note type="marginal">1</note>5. Auch nicht in diesem Punkt soll man sich streiten, ob man den Körperteil, der 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,1">
+                  <p n="1">
+                     <lb n="16"/>5. Auch nicht in diesem Punkt soll man sich streiten, ob man den Körperteil, der 
 <lb n="17"/>von der Natur den Frauen zur Schwangerschaft gegeben wurde, Hystera oder Metra 
 <lb n="18"/>nennen soll, so wie (man sich) auch nicht (streiten soll), ob man es im Plural Hysteras 
 <lb n="19"/>oder Metras nennen soll, oder ob man es im Singular Hysteran und Metran nennen 
@@ -1051,29 +1037,27 @@
 <lb n="23"/>hysterischen Ersticken, von anderen aber hysterische Apnoe genannten. Es ist nämlich 
 <lb n="24"/>möglich, Ärzte zu hören, die mit jeder der beiden Bezeichnungen ein ein­ziges Leiden 
 <lb n="25"/>bezeichnen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,2">
-               <p n="2">
-                  <lb n="26"/>
-                  <note type="marginal">2</note>Ich aber, nachdem ich viele hysterische Frauen gesehen habe, wie sie sich sowohl 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,2">
+                  <p n="2">
+                     <lb n="26"/>Ich aber, nachdem ich viele hysterische Frauen gesehen habe, wie sie sich sowohl 
 <lb n="27"/>selbst bezeichnen als auch die früheren Ärztinnen, – von denen ist es wahrscheinlich, 
 <lb n="28"/>dass auch jene den Namen gehört hatten –, einige zwar bewusstlos und zugleich ohne 
 <pb n="413"/>
-                  <lb n="1"/>Bewegung liegend, mit einem äußerst dumpfen und kurzen Puls, oder sie erschienen 
+                     <lb n="1"/>Bewegung liegend, mit einem äußerst dumpfen und kurzen Puls, oder sie erschienen 
 <lb n="2"/>sogar ganz ohne Puls (zu sein), einige aber waren bei Bewusstsein und bewegten sich 
 <lb n="3"/>und hatten keinen Schaden in ihrem Denken, schwach und atmeten mit Mühe, andere 
 <lb n="4"/>aber zogen ihre Gliedmaßen zusammen, (ich) nehme an, dass es mehrere unterschied­
 <lb n="5"/>liche Ausprägungen der hysterischen Leiden gibt, sei es bezüglich der Größe der Ursa­
 <lb n="6"/>che, die sie bewirkt, oder die sich voneinander in Bezug auf einige Arten unter­scheiden. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,3">
-               <p n="3">
-                  <lb n="7"/>
-                  <note type="marginal">3</note>Die erste genannte unterschiedliche Ausprägung, gemäß dem von Herakleides 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,3">
+                  <p n="3">
+                     <lb n="7"/>Die erste genannte unterschiedliche Ausprägung, gemäß dem von Herakleides 
 <lb n="8"/>Pontikos geschriebenen Buch, wirft viele Fragen auf, wie sie entsteht. Jene Frau, sagt 
 <lb n="9"/>man, sei atemlos und ohne Puls gewesen, wobei sie sich in einem einzigen Punkt von 
 <lb n="10"/>den Toten unterschied, dass sie kurze Wärme in den mittleren Teilen ihres Körpers hat­
@@ -1086,13 +1070,12 @@
 <lb n="17"/>empfehlen, eine kleine Schüssel voller Wasser im Bereich des Magenmundes auf­zu­
 <lb n="18"/>legen, denn (sie sagen), dass die Flüssigkeit vollständig unbewegt bleiben wird, wenn 
 <lb n="19"/>gar nichts von dem Atem bewahrt sein sollte. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,4">
-               <p n="4">
-                  <lb n="20"/>
-                  <note type="marginal">4</note>Wenn nun alle Frauen, die in diesem Zustand sind, starben, wäre die Frage einfach. 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,4">
+                  <p n="4">
+                     <lb n="20"/>Wenn nun alle Frauen, die in diesem Zustand sind, starben, wäre die Frage einfach. 
 <lb n="21"/>Da aber einige gerettet werden, gibt es eine zweifache Frage, da wir sowohl nach dem 
 <lb n="22"/>Zustand suchen, durch den die Funktion der Atmung zugrunde geht, und noch mehr, 
 <lb n="23"/>wie diejenigen, die gar nicht atmen, noch leben. Es gibt nämlich die Überzeugung, 
@@ -1101,28 +1084,26 @@
 <lb n="26"/>Oder ist dies schwieriger? Es ist in der Tat nicht schwieriger, sondern man kann es 
 <lb n="27"/>leichter ermitteln als das andere, wenn freilich auch die Tiere, die Winterschlaf halten, 
 <pb n="415"/>
-                  <lb n="1"/>den Toten gleich, in ihren Höhlen eingesperrt, offensichtlich nichts von dem Atem 
+                     <lb n="1"/>den Toten gleich, in ihren Höhlen eingesperrt, offensichtlich nichts von dem Atem 
 <lb n="2"/>erhalten. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,5">
-               <p n="5">
-                  <lb n="3"/>
-                  <note type="marginal">5</note>Da dies erkannt ist und man deutlich sieht, dass jene Tiere deutlich kalt sind, (da) 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,5">
+                  <p n="5">
+                     <lb n="3"/>Da dies erkannt ist und man deutlich sieht, dass jene Tiere deutlich kalt sind, (da) 
 <lb n="4"/>aber auch bewiesen ist, dass der größte Nutzen der Atmung die Bewahrung der einge­
 <lb n="5"/>pflanzten Wärme ist – die (Bewahrung) entsteht durch Abkühlung–, ist es nicht mehr 
 <lb n="6"/>schwer zu überlegen, dass die geringe übrig bleibende Wärme bei ihnen durch die 
 <lb n="7"/>Funktion der Arterien und des Herzens bewahrt wird, die von einigen Ärzten Dia­
 <lb n="8"/>pnoe genannt wird, so wie die Funktion durch den Brustkorb und die Atmung Ana­
 <lb n="9"/>pnoe genannt wird. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,6">
-               <p n="6">
-                  <lb n="10"/>
-                  <note type="marginal">6</note>Es ist nun möglich bei der hysterischen Apnoe, da der ganze Körper abgekühlt ist: 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,6">
+                  <p n="6">
+                     <lb n="10"/>Es ist nun möglich bei der hysterischen Apnoe, da der ganze Körper abgekühlt ist: 
 <lb n="11"/>Dies zeigt sich nämlich deutlich, dass die Atmung durch den Mund überhaupt nicht, 
 <lb n="12"/>aber diejenige durch die Arterien stattfindet. Es ist aber auch möglich, weil sie minimal 
 <lb n="13"/>ist, dass sie der Wahrnehmung entgeht. Anschließend nun, damit wir in nichts, was 
@@ -1132,39 +1113,36 @@
 <lb n="17"/>Übereinkunft (darüber), dass dieses Leiden meistens bei den Witwen auftritt, insbe­
 <lb n="18"/>sondere wenn sie, die zuvor einen guten Regelfluss hatten und schwanger wurden und 
 <lb n="19"/>Geschlechtsverkehr mit den Männern hatten, alle dieser Dinge beraubt werden. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,7">
-               <p n="7">
-                  <lb n="20"/>
-                  <note type="marginal">7</note>Welche Überlegung könnte man nun daraus wahrscheinlicher anstellen als dass 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,7">
+                  <p n="7">
+                     <lb n="20"/>Welche Überlegung könnte man nun daraus wahrscheinlicher anstellen als dass 
 <lb n="21"/>diese so benannten hysterischen Zustände die Frauen befallen wegen der Verhaltung 
 <lb n="22"/>der Monatsblutung oder des Samens, ob das zufällig irgendwelche Apnoen oder Er­
 <lb n="23"/>stickung oder auch Kontraktionen sind? Und vielleicht mehr wegen der Verhaltung 
 <lb n="24"/>des Samens, weil dieser sowohl eine große Kraft hat und für die Frauen flüssiger und 
 <lb n="25"/>kälter ist und ausgeschieden werden muss bei denjenigen, die von Natur aus viel Sa­
 <lb n="26"/>men haben, wie auch bei den Männern. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,8">
-               <p n="8">
-                  <lb n="27"/>
-                  <note type="marginal">8</note>Denn auch bei ihnen haben wir nicht wenige Unterschiede erkannt, da einige 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,8">
+                  <p n="8">
+                     <lb n="27"/>Denn auch bei ihnen haben wir nicht wenige Unterschiede erkannt, da einige 
 <lb n="28"/>sofort von Jugend an infolge des Geschlechtsverkehrs schwach werden, einige aber, 
 <lb n="29"/>wenn sie nicht kontinuierlich Geschlechtsverkehr haben, sind beschwert im Kopf, em­
 <lb n="30"/>pfinden Ekel und werden fiebrig, sie haben einen schlechteren Appetit und eine gerin­
 <lb n="31"/>gere Verdauung. Deren Körper verglich Platon mit Bäumen, die viel mehr Früchte 
 <lb n="32"/>tragen als es angemessen ist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,9">
-               <p n="9">
-                  <pb n="417"/>
-                  <lb n="1"/>
-                  <note type="marginal">9</note>Wir haben erkannt, dass nun einige, die von dieser Natur sind und sich danach aus 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,9">
+                  <p n="9">
+                     <pb n="417"/>
+                     <lb n="1"/>Wir haben erkannt, dass nun einige, die von dieser Natur sind und sich danach aus 
 <lb n="2"/>Scham vom Geschlechtsverkehr enthalten hatten, dumpf und schwerfällig gewor­den 
 <lb n="3"/>sind. Einige aber sind grundlos mürrisch und hoffnungslos, ähnlich den Melan­cholikern, 
 <lb n="4"/>und haben schlechteren Appetit und Verdauung. Ich kenne aber auch jemanden, der 
@@ -1175,13 +1153,12 @@
 <lb n="9"/>ist missmutig nicht nur in Folge davon, sondern auch ohne offensichtliche Ursa­che, 
 <lb n="10"/>ähnlich wie die Melancholiker. Bei diesem hörte alles sehr schnell auf, als er seine ur­
 <lb n="11"/>sprüngliche Gewohnheit wieder aufgenommen hatte. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,10">
-               <p n="10">
-                  <lb n="12"/>
-                  <note type="marginal">10</note>Mir schien es nun, als ich bei mir über derartige Dinge nachdachte, dass die Ver­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,10">
+                  <p n="10">
+                     <lb n="12"/>Mir schien es nun, als ich bei mir über derartige Dinge nachdachte, dass die Ver­
 <lb n="13"/>haltung des Samens eine größere Kraft hat im Hinblick auf die Schädigung des Kör­
 <lb n="14"/>pers als die Verhaltung der Monatsblutung bei jenen Körpern, bei denen er selbst (der 
 <lb n="15"/>Samen) von Natur aus ein schlechterer Saft ist und reichlicher und das Leben träger, 
@@ -1190,13 +1167,12 @@
 <lb n="18"/>(Men­schen) noch das natürliche Verlangen nach Ausscheidung die Ursache dafür dar­
 <lb n="19"/>stellt. Sie zwingt nämlich alle Menschen, immer wenn er derartig ist und reichlich, zu 
 <lb n="20"/>seiner Ausscheidung. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,11">
-               <p n="11">
-                  <lb n="21"/>
-                  <note type="marginal">11</note>Diogenes der Kyniker nun ist nach allgemeiner Übereinstimmung der am 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,11">
+                  <p n="11">
+                     <lb n="21"/>Diogenes der Kyniker nun ist nach allgemeiner Übereinstimmung der am 
 <lb n="22"/>meisten im Erdulden geübte von allen Menschen in Hinblick auf sämtliche Tätigkei­
 <lb n="23"/>ten, die der Enthaltsamkeit und des Ausharrens bedürfen, aber dennoch hat auch die­
 <lb n="24"/>ser Gebrauch vom Geschlechtsverkehr gemacht, weil er die Belästigung ablegen wollte, 
@@ -1211,16 +1187,15 @@
 <lb n="33"/>glaube ich, dass auch die anderen Lebewesen zum Geschlechtsverkehr getrieben wer­
 <lb n="34"/>den, nicht weil sie den Beschluss gefasst haben, dass die Lust gut ist, sondern weil sie 
 <pb n="419"/>
-                  <lb n="1"/>zur Aus­scheidung kommen (wollen), weil der Samen durch seine Zurückhaltung sie 
+                     <lb n="1"/>zur Aus­scheidung kommen (wollen), weil der Samen durch seine Zurückhaltung sie 
 <lb n="2"/>belastet, so wie auch das Ausscheiden von Stuhl und Urin, glaube ich, in ihnen von 
 <lb n="3"/>Natur aus vorhanden ist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,12">
-               <p n="12">
-                  <lb n="4"/>
-                  <note type="marginal">12</note>Als ich einmal bei diesen Überlegungen war, zeigt sich folgender Vorfall bei einer 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,12">
+                  <p n="12">
+                     <lb n="4"/>Als ich einmal bei diesen Überlegungen war, zeigt sich folgender Vorfall bei einer 
 <lb n="5"/>Frau, die seit langer Zeit Witwe war: Da sie nämlich irgendwelche anderen lästigen 
 <lb n="6"/>und die Nerven betreffenden Spannungen befielen und die Hebamme gesagt hatte, 
 <lb n="7"/>dass sich die Gebärmutter zurückgezogen hatte, beschlossen sie, Hilfsmittel anzuwen­
@@ -1230,13 +1205,12 @@
 <lb n="11"/>ähn­lich denen beim Geschlechtsverkehr, infolge derer, nachdem viel und dickflüssiger 
 <lb n="12"/>Samen ausgeschieden worden war, die Frau von den lästigen Symptomen, die sie befie­
 <lb n="13"/>len, befreit wurde. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,13">
-               <p n="13">
-                  <lb n="14"/>
-                  <note type="marginal">13</note>Aus diesem Grund nun schien mir, dass der Samen von schlechter Saftqualität eine 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,13">
+                  <p n="13">
+                     <lb n="14"/>Aus diesem Grund nun schien mir, dass der Samen von schlechter Saftqualität eine 
 <lb n="15"/>größere Kraft zur Schädigung des gesamten Körpers hat als die Monatsblutung, sodass 
 <lb n="16"/>dennoch, selbst wenn sie einmal den Witwen kommt, die Zurückhaltung des Samens 
 <lb n="17"/>belastend und zugleich schädlich für sie ist. Alle diejenigen aber, die glauben, dass es, 
@@ -1244,13 +1218,12 @@
 <lb n="19"/>einer kleinen Menge Saft, die in einem einzigen Körperteil enthalten ist, die Schuld zu 
 <lb n="20"/>geben (an diesen Symptomen), scheinen mir vergesslich zu sein in Bezug auf die Din­
 <lb n="21"/>ge, die Tag für Tag geschehen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,14">
-               <p n="14">
-                  <lb n="22"/>
-                  <note type="marginal">14</note>Bei den Bissen der Phalangien sieht man, dass der ganze Körper leidet, obwohl nur 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,14">
+                  <p n="14">
+                     <lb n="22"/>Bei den Bissen der Phalangien sieht man, dass der ganze Körper leidet, obwohl nur 
 <lb n="23"/>eine kleine Menge Gift durch eine sehr kleine Öffnung injiziert wird. Der Biss der 
 <lb n="24"/>Skorpione ist noch bewundernswerter, weil sie sowohl sehr heftige Symptome in kur­
 <lb n="25"/>zer Zeit verursachen als auch das, was sie nach ihrem Stich hinabwerfen, entweder eine 
@@ -1260,17 +1233,16 @@
 <lb n="29"/>getroffen, und zugleich ohnmächtig wird, sondern entweder weil irgendein Hauch 
 <lb n="30"/>oder eine dünne Flüssigkeit injiziert wird, liegt es nahe, dass es zu diesen Erscheinun­
 <lb n="31"/>gen kommt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,15">
-               <p n="15">
-                  <lb n="32"/>
-                  <note type="marginal">15</note>Manche glauben aber, dass einige Substanzen nur durch die Berührung imstande 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,15">
+                  <p n="15">
+                     <lb n="32"/>Manche glauben aber, dass einige Substanzen nur durch die Berührung imstande 
 <lb n="33"/>sind, das, was sich ihnen nähert, zu verändern, allein durch die Kraft ihrer Beschaffen­
 <lb n="34"/>heit; diese Naturanlage sei nämlich auch bei den Zitterrochen zu sehen, und sie habe 
 <pb n="421"/>
-                  <lb n="1"/>eine so starke Kraft, dass die Veränderung sogar durch den Dreizack der Fischer in ihre 
+                     <lb n="1"/>eine so starke Kraft, dass die Veränderung sogar durch den Dreizack der Fischer in ihre 
 <lb n="2"/>Hand übergehe und diese sofort ganz taub werde. Diese (Beispiele) sind nun ausrei­
 <lb n="3"/>chende Beweise dafür, dass sogar eine geringe Substanz die größten Veränderungen 
 <lb n="4"/>allein durch Berührung bewirken kann, und der Herakles-Stein, den man 
@@ -1278,25 +1250,23 @@
 <lb n="6"/>ihm ohne Verbindung hängt, hängt ein anderes zweites Teil, das jenes Berührende in 
 <lb n="7"/>gleicher Weise wie das erste berührt, wieder von diesem, und dann hängt ein drittes 
 <lb n="8"/>vom zweiten.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,16">
-               <p n="16">
-                  <lb n="9"/>
-                  <note type="marginal">16</note>Da sich nun deutlich zeigt, dass einige Substanzen eine äußerst starke Kraft haben, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,16">
+                  <p n="16">
+                     <lb n="9"/>Da sich nun deutlich zeigt, dass einige Substanzen eine äußerst starke Kraft haben, 
 <lb n="10"/>bliebe noch übrig zu untersuchen, ob irgendeine Verderbnis in den Lebewesen eine 
 <lb n="11"/>solche Größe erreichen kann, dass sie eine ähnliche Qualität und Stärke hat wie das 
 <lb n="12"/>Gift eines wilden Tieres. Oder ist auch dies von den Ärzten selbst entschieden worden, 
 <lb n="13"/>die sich mit dieser einen Fragestellung befasst haben, ob es eigentümliche Anzeichen 
 <lb n="14"/>für eine Vergiftung gebe oder nicht?  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,17">
-               <p n="17">
-                  <lb n="15"/>
-                  <note type="marginal">17</note>Und diejenigen freilich, die am besten darüber gesprochen zu haben scheinen, ge­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,17">
+                  <p n="17">
+                     <lb n="15"/>Und diejenigen freilich, die am besten darüber gesprochen zu haben scheinen, ge­
 <lb n="16"/>stehen, dass dieselben Leiden sowohl bei den Gaben von tödlichen Heilmitteln auf­
 <lb n="17"/>treten als auch bei den Verderbnissen, die von unserem Körper ausgehen; freilich kann 
 <lb n="18"/>man diejenigen, die Heilmittel zu sich genommen haben, von denen unterscheiden, 
@@ -1311,17 +1281,16 @@
 <lb n="27"/>Monatsblut, was einen ähnlichen Zustand hat, wenn sie zurückgehalten werden und 
 <lb n="28"/>verfaulen (durchfaulen), schlimme Symptome bei denjenigen Körpern hervorbringen, 
 <lb n="29"/>die eine passende Anlage für solche Leiden haben.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,18">
-               <p n="18">
-                  <lb n="30"/>
-                  <note type="marginal">18</note>Auch bei den Hunden ist es nämlich möglich zu lernen, wie viel Kraft die geeig­nete 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,18">
+                  <p n="18">
+                     <lb n="30"/>Auch bei den Hunden ist es nämlich möglich zu lernen, wie viel Kraft die geeig­nete 
 <lb n="31"/>Anlage, irgendetwas zu erleiden, hat: Obwohl kein anderes Tier von Tollwut erfasst 
 <lb n="32"/>wird, wird dieses allein davon (befallen), und es kommt in ihm zu einer so großen Ver­
 <pb n="423"/>
-                  <lb n="1"/>derbnis der Säfte, dass allein sein Speichel, wenn er auf den menschlichen Körper fällt, 
+                     <lb n="1"/>derbnis der Säfte, dass allein sein Speichel, wenn er auf den menschlichen Körper fällt, 
 <lb n="2"/>Tollwut bewirkt. So wie nun von einem kleinen Anfang an der Speichel­qualität ir­
 <lb n="3"/>gendein (krankhafter) Zustand im Körper zunimmt, und wenn es eine nen­nenswerte 
 <lb n="4"/>Größe erreicht hat, wird er nach sechs Monaten erkannt, manchmal ohne vorher ir­
@@ -1329,13 +1298,12 @@
 <lb n="6"/>Saftes, der im Körper des Lebewesens entstanden ist, leidet im allgemeinen mit der 
 <lb n="7"/>Zeit etwas von den Hauptkörperteilen mit, wodurch sich der gesamte Körper schnell 
 <lb n="8"/>verändert.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,19">
-               <p n="19">
-                  <lb n="9"/>
-                  <note type="marginal">19</note>Dafür aber, dass man für die sogenannten „hysterischen Symptome“ naheliegender 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,19">
+                  <p n="19">
+                     <lb n="9"/>Dafür aber, dass man für die sogenannten „hysterischen Symptome“ naheliegender 
 <lb n="10"/>Weise von Alters her überzeugt ist, dass im Bereich der Gebärmutter quasi ihre Wurzel 
 <lb n="11"/>ist, ist kein geringer Beweis die Tatsache, dass allein den Verwitweten und den Frauen, 
 <lb n="12"/>bei denen die reinigenden Monatsblutungen zurückgehalten werden, die derartigen 
@@ -1349,13 +1317,12 @@
 <lb n="20"/>en) auch daraus, dass einige der Witwen, die tadellos gereinigt werden, oder nicht viel 
 <lb n="21"/>schlechter als vorher (gereinigt werden), in gleicher Weise von diesen Symptomen be­
 <lb n="22"/>fallen sind.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,20">
-               <p n="20">
-                  <lb n="23"/>
-                  <note type="marginal">20</note>Mit diesen stimmen auch überein die Zeichen im Bereich der Gebärmutter, die 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,20">
+                  <p n="20">
+                     <lb n="23"/>Mit diesen stimmen auch überein die Zeichen im Bereich der Gebärmutter, die 
 <lb n="24"/>sich den Ärztinnen zeigen, die sie genau abtasten. Denn manchmal nämlich, wie wenn 
 <lb n="25"/>sie (die Gebärmutter) ganz zurückgezogen wäre, manchmal aber, wie wenn sie sich zur 
 <lb n="26"/>Seite weggezogen hätte, erscheint der (Gebärmutter-)Hals denjenigen geneigt, die ihn 
@@ -1367,38 +1334,35 @@
 <lb n="32"/>bleibt, empört es sich und wird zornig und irrt umher überall im Körper, wobei es die 
 <lb n="33"/>Aus­gänge der Luft versperrt und nicht die Atmung zulässt, macht es äußerst ratlos 
 <lb n="34"/>und verursacht auch andere vielfältige Krankheiten.“  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,21">
-               <p n="21">
-                  <lb n="35"/>
-                  <note type="marginal">21</note>Nachdem Platon dies gesagt hatte, fügten einige hinzu, das die Gebärmutter, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,21">
+                  <p n="21">
+                     <lb n="35"/>Nachdem Platon dies gesagt hatte, fügten einige hinzu, das die Gebärmutter, 
 <lb n="36"/>wenn sie im Körper umherirrt, sobald (sie) auf das Zwerchfell stößt, die Atmung 
 <lb n="37"/>behindert. Einige aber sagen zwar, dass sie nicht wie ein Lebewesen umherirrt, dass 
 <lb n="38"/>aber, wenn sie austrocknet, weil die Monatsblutung zurückgehalten wird, sie zu den 
 <lb n="39"/>Eingeweiden emporkommt, da sie den Wunsch hat, befeuchtet zu werden, und sobald 
 <lb n="40"/>sie einmal bei ihrem Aufstieg Kontakt mit dem Zwerchfell hat, würde das Lebewesen 
 <lb n="41"/>der At­mung beraubt.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,22">
-               <p n="22">
-                  <pb n="425"/>
-                  <lb n="1"/>
-                  <note type="marginal">22</note>All diejenigen nun, die das, was sich bei den Sektionen zeigt, nicht kennen und 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,22">
+                  <p n="22">
+                     <pb n="425"/>
+                     <lb n="1"/>All diejenigen nun, die das, was sich bei den Sektionen zeigt, nicht kennen und 
 <lb n="2"/>nichts untersucht haben im Hinblick auf die natürlichen und willkürlichen Funkti­
 <lb n="3"/>onen, obwohl sie nichts hörten, was das, was sie gesagt hatten, beweist, glauben, dass es 
 <lb n="4"/>möglich ist, dass irgendetwas von dem Gesagten wahr ist. Alle diejenigen aber, die sich 
 <lb n="5"/>in beidem geübt hatten, sehen deutlich auch ohne mich das Faule der Argumen­tation.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,23">
-               <p n="23">
-                  <lb n="6"/>
-                  <note type="marginal">23</note>Denn auch wenn irgendein Teil der Gebärmutter zurückgezogen zu sein scheint, ist 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,23">
+                  <p n="23">
+                     <lb n="6"/>Denn auch wenn irgendein Teil der Gebärmutter zurückgezogen zu sein scheint, ist 
 <lb n="7"/>dies kurz und es ist kein hinreichender Hinweis darauf, dass ihre gesamte Wölbung 
 <lb n="8"/>nicht einmal bis zum Magen zurückgezogen ist, geschweige denn, dass sie über diesen 
 <lb n="9"/>(Magen) hinwegsteigt und an irgendeiner Stelle das Zwerchfell berührt. Selbst wenn 
@@ -1409,13 +1373,12 @@
 <lb n="14"/>figer, aber kein anderes Symptom befällt das Lebewesen. Aber auch bei den Schwan­
 <lb n="15"/>gerschaften bewirkt die Gebärmutter, die sich über den Fötus ausstreckt, dass die At­
 <lb n="16"/>mung häufiger wird, aber auch diese (Gebärmutter) bewirkt keinen anderen Schaden.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,24">
-               <p n="24">
-                  <lb n="17"/>
-                  <note type="marginal">24</note>Dass sie (Gebärmutter), weil sie austrocknet, zu den Eingeweiden emporkommt, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,24">
+                  <p n="24">
+                     <lb n="17"/>Dass sie (Gebärmutter), weil sie austrocknet, zu den Eingeweiden emporkommt, 
 <lb n="18"/>weil sie befeuchtet zu werden begehrt, das ist gänzlich absurd. Wenn nämlich die Ge­
 <lb n="19"/>bärmutter einmal schlechthin der Feuchtigkeit bedarf, dann hat sie die Blase in ihrer 
 <lb n="20"/>Nähe und den gesamten unteren Teil des Dickdarms. Wenn sie aber nicht der Feuch­
@@ -1432,29 +1395,27 @@
 <lb n="31"/>irgendetwas (an sich) zu ziehen? Selbst wenn der Kanal der hohlen Vene nicht der 
 <lb n="32"/>größte wäre, gibt es freilich keinen anderen. Denn diese eine Vene leitet als einzige das 
 <lb n="33"/>Blut von der Leber zu allen Teilen, die sich unterhalb des Zwerchfells befinden. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,25">
-               <p n="25">
-                  <lb n="34"/>
-                  <note type="marginal">25</note>Deren Argumentation ist also vollkommen absurd, noch zusätzlich zu ihrem 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,25">
+                  <p n="25">
+                     <lb n="34"/>Deren Argumentation ist also vollkommen absurd, noch zusätzlich zu ihrem 
 <lb n="35"/>Argument, dass die Gebärmutter als Lebewesen tätig ist. Aber selbst wenn dies zuge­
 <lb n="36"/>standen würde, wird sie zwar geschädigt werden, wenn sie der Gegenstände der eige­
 <lb n="37"/>nen Begierde beraubt wird, vielleicht wird sie aber auch abmagern, wie einige behaup­
 <pb n="427"/>
-                  <lb n="1"/>ten, dass es die liebenden Palmen erleiden, sie wird aber wahrhaftig weder zum 
+                     <lb n="1"/>ten, dass es die liebenden Palmen erleiden, sie wird aber wahrhaftig weder zum 
 <lb n="2"/>Zwerchfell noch zu einer anderen Körpergegend wandern. Zu allem anderen kommt 
 <lb n="3"/>noch hinzu, dass das Zwerchfell sehr trocken in seiner Mischung ist; die Gebärmutter 
 <lb n="4"/>aber braucht, gemäß denjenigen, die behaupten, dass sie austrocknet, die Nähe zu den 
 <lb n="5"/>feuchten Körperteilen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,26">
-               <p n="26">
-                  <lb n="6"/>
-                  <note type="marginal">26</note>Vielleicht wird uns nun einer nach der Ursache fragen, wegen der die Gebärmutter 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,26">
+                  <p n="26">
+                     <lb n="6"/>Vielleicht wird uns nun einer nach der Ursache fragen, wegen der die Gebärmutter 
 <lb n="7"/>oft zurückgezogen und zur Seite gezogen erscheint. Das sagen nämlich die Hebam­
 <lb n="8"/>men, so wie freilich auch, dass, auch wenn sie (die Gebärmutter) oft an ihrem eigenen 
 <lb n="9"/>Platz bleibt, die hysterischen Symptome nicht weniger die Frauen befallen. Ich werde 
@@ -1463,26 +1424,24 @@
 <lb n="12"/>Ursache dafür sind, dass es den abtastenden Hebammen scheint, als würde sich auch 
 <lb n="13"/>der Hals zurückziehen und danebenziehen. Denn es ist notwendig, dass der (Gebär­
 <lb n="14"/>mutter-)Hals zusammen mit der Gebärmutter abgehandelt wird. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,27">
-               <p n="27">
-                  <lb n="15"/>
-                  <note type="marginal">27</note>Welche Ursache gibt es also dafür, dass sich die Gebärmutter zurückzieht oder zur 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,27">
+                  <p n="27">
+                     <lb n="15"/>Welche Ursache gibt es also dafür, dass sich die Gebärmutter zurückzieht oder zur 
 <lb n="16"/>Seite zieht? Dies nämlich fehlt noch unserer Argumentation: Die Anfüllung der Gefä­
 <lb n="17"/>ße, die zu ihnen gelangen zusammen mit ihren Anhängseln. Es wurde nämlich von 
 <lb n="18"/>uns gezeigt, als wir den Aphorsimus erklärten, gemäß dem er behauptet, dass die Kon­
 <lb n="19"/>traktion durch Entleerung und Anfüllung entsteht, dass sich die Körper der ange­füll­
 <lb n="20"/>ten (Gefäße) in die Breite und die Tiefe ausdehnen, die Länge aber kürzer machen; je 
 <lb n="21"/>kürzer sie werden, desto mehr werden sie zum Anfang zurückgezogen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,28">
-               <p n="28">
-                  <lb n="22"/>
-                  <note type="marginal">28</note>Erasistratos nun sagt, dass auch die Muskeln aufgrund ihrer Anfüllung mit 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,28">
+                  <p n="28">
+                     <lb n="22"/>Erasistratos nun sagt, dass auch die Muskeln aufgrund ihrer Anfüllung mit 
 <lb n="23"/>Pneuma an Breite zunehmen und etwas an Länge verlieren und sie sich aus diesem 
 <lb n="24"/>Grund zurückziehen. Woher kommt nun die Anfüllung der Venen und ihrer Anhäng­
 <lb n="25"/>sel? Es ist offensichtlich, dass es von der Verhaltung des Monatsbluts kommt, denn das 
@@ -1496,26 +1455,24 @@
 <lb n="33"/>der sie mehr anzieht. Es ist also nicht so, dass die Gebärmutter bei den Frauen wie ein 
 <lb n="34"/>umherirrendes Lebewesen, mal zu dem einen, mal zu dem anderen Ort wandert, son­
 <lb n="35"/>dern weil sie angezogen wird durch die Anspannung. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,29">
-               <p n="29">
-                  <pb n="429"/>
-                  <lb n="1"/>
-                  <note type="marginal">29</note>Und wenn jemand sagen würde, dass dann der Körper der Gebärmutter selbst 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,29">
+                  <p n="29">
+                     <pb n="429"/>
+                     <lb n="1"/>Und wenn jemand sagen würde, dass dann der Körper der Gebärmutter selbst 
 <lb n="2"/>nicht krank ist, dass sie aber eine Verdrehung erleidet, wenn sie mal hier, mal woan­
 <lb n="3"/>dershin gezogen wird, dann wird er in angemessener Weise sprechen. Auch in anderen 
 <lb n="4"/>Körperteilen kommt es nämlich zu einer derartigen Vorstellung der Leiden, sodass die 
 <lb n="5"/>Ärzte oftmals getäuscht werden, wenn sie meinen, dass der verrenkte Körperteil er­
 <lb n="6"/>krankt ist, wenn es entweder nicht gebeugt oder ausgestreckt werden kann. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,30">
-               <p n="30">
-                  <lb n="7"/>
-                  <note type="marginal">30</note>Auch dies lehrt Hippokrates in seinem Buch über die Gelenke, und er erwähn­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,30">
+                  <p n="30">
+                     <lb n="7"/>Auch dies lehrt Hippokrates in seinem Buch über die Gelenke, und er erwähn­
 <lb n="8"/>te die sogenannte „Wanderung der Gebärmutter“, indem er irgendwie folgender­ma­
 <lb n="9"/>ßen schrieb: „Diejenigen, bei denen der Oberschenkelkopf nach hinten ausgerenkt ist, 
 <lb n="10"/>er ist aber bei wenigen ausgerenkt, diese können das Glied nicht ausstrecken, weder im 
@@ -1523,13 +1480,12 @@
 <lb n="12"/>wenigsten diese, denen von Alters her dasselbe geschehen ist; (sie) strecken sowohl das 
 <lb n="13"/>Gelenk im Bereich der Schamgegend als auch das Gelenk im Bereich der Kniekehle 
 <lb n="14"/>aus.“ </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,31">
-               <p n="31">
-                  <lb n="15"/>
-                  <note type="marginal">31</note>In dieser Abhandlung sagt er, obwohl das Gelenk im Bereich der Kniekehle nichts 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,31">
+                  <p n="31">
+                     <lb n="15"/>In dieser Abhandlung sagt er, obwohl das Gelenk im Bereich der Kniekehle nichts 
 <lb n="16"/>erlitten hat, dass es nicht im Stande ist, sich auszustrecken, in Folge der Nähe zur 
 <lb n="17"/>Schamgegend. Dann wird er im Folgenden hinzufügen und sagen: „Man muss freilich 
 <lb n="18"/>auch dieses darüber hinaus verstehen, denn es ist ja leicht zu gebrauchen und sehr nen­
@@ -1537,40 +1493,37 @@
 <lb n="20"/>sind, ihr Gelenk im Bereich der Kniekehle auszustrecken, wenn sie nicht auch noch 
 <lb n="21"/>das Gelenk im Bereich der Schamgegend mitausstrecken, es sei denn, sie heben ihren 
 <pb n="431"/>
-                  <lb n="1"/>Fuß ganz hoch. Auf diese Weise aber könnten sie es. Sie können aber nicht in gleicher 
+                     <lb n="1"/>Fuß ganz hoch. Auf diese Weise aber könnten sie es. Sie können aber nicht in gleicher 
 <lb n="2"/>Weise das Gelenk im Bereich der Kniekehle mitbeugen, sondern viel schwieriger, wenn 
 <lb n="3"/>sie nicht das Gelenk im Bereich der Schamgegend mitbeugen.“ </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,32">
-               <p n="32">
-                  <lb n="4"/>
-                  <note type="marginal">32</note>Nachdem er dies vorher gesagt hat, sagt er im Folgenden: „Viele andere Vorgänge 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,32">
+                  <p n="32">
+                     <lb n="4"/>Nachdem er dies vorher gesagt hat, sagt er im Folgenden: „Viele andere Vorgänge 
 <lb n="5"/>im Körper haben solche Ähnlichkeit sowohl bei den Versteifungen der Nerven als 
 <lb n="6"/>auch bei den Stellungen der Muskeln, und sie verdienen es sehr und am meinsten, 
 <lb n="7"/>erkannt zu werden, oder wie jemand meint, auch bei der Naturanlage des Darms und 
 <lb n="8"/>bei der des gesamten Bauchs und bei den Umherirrungen und Versteifungen der 
 <lb n="9"/>Gebärmutter“. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,33">
-               <p n="33">
-                  <lb n="10"/>
-                  <note type="marginal">33</note>Mit diesen Worten hatte sich Hippokrates vorgenommen, über das Gelenk der 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,33">
+                  <p n="33">
+                     <lb n="10"/>Mit diesen Worten hatte sich Hippokrates vorgenommen, über das Gelenk der 
 <lb n="11"/>Kniekehle zu sprechen, nicht weil es etwa von Natur aus bewegt werden kann, und 
 <lb n="12"/>nicht weil es ein eigenes Leiden erlitten hat, sondern wegen der Gemeinschaft mit dem 
 <lb n="13"/>Hüftgelenk. Er erwähnte aber auch die Versteifungen im Bereich der Gebärmutter, 
 <lb n="14"/>wenn diese, soweit es an ihr liegt, nicht wandert, wenn sie aber von anderen Körper­
 <lb n="15"/>teilen gedehnt wird, dann folgt sie denjenigen, die sie mit sich fortziehen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,34">
-               <p n="34">
-                  <lb n="16"/>
-                  <note type="marginal">34</note>Die Verdrehungen nun der Gebärmutter gemäß der genannten Weise folgen den 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,34">
+                  <p n="34">
+                     <lb n="16"/>Die Verdrehungen nun der Gebärmutter gemäß der genannten Weise folgen den 
 <lb n="17"/>Verhaltungen des Monatsbluts, weil sie selbst nicht die Ursachen der Symptome des 
 <lb n="18"/>Lebewesens sind, sie haben aber als gemeinsame Ursache dafür die große Menge der 
 <lb n="19"/>zurückgehaltenen Monatsreinigung. Die Schädigungen, die bei den Witwen ohne Ver­
@@ -1583,29 +1536,27 @@
 <lb n="26"/>dann kommt es zu Zuckungen, Missmut aber wenn es etwas schwarzgalliger als ange­
 <lb n="27"/>messen ist. So wie freilich wiederum die Ohnmachtsanfälle auf die Heftigkeit der 
 <pb n="433"/>
-                  <lb n="1"/>Spannungen folgen und den Abkühlungen und Schädigungen des Magens. Es ist evi­
+                     <lb n="1"/>Spannungen folgen und den Abkühlungen und Schädigungen des Magens. Es ist evi­
 <lb n="2"/>dent, dass wir den Magenmund in diesen Abhandlungen Speiseröhre (Stomachos) zu 
 <lb n="3"/>nennen pflegen, so wie auch bei allen Fällen von Bewusstlosigkeit, die durch den 
 <lb n="4"/>Magenmund bedingt sind. Bei allen Ärzten ist es der Brauch, diese Bezeichnung so zu 
 <lb n="5"/>gebrauchen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,35">
-               <p n="35">
-                  <lb n="6"/>
-                  <note type="marginal">35</note>Alle Symptome aber, die auf die Verhaltung des Monatsbluts folgen, denn ich 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,35">
+                  <p n="35">
+                     <lb n="6"/>Alle Symptome aber, die auf die Verhaltung des Monatsbluts folgen, denn ich 
 <lb n="7"/>habe versprochen, auch darüber etwas zu sagen, will ich nun schon abhandeln, wobei 
 <lb n="8"/>ich bei dem anfange, was Hippokrates in den Aphorismen geschrieben hat; eins 
 <lb n="9"/>davon ist aber das Folgende: „Wenn eine Frau, die nicht schwanger ist und auch nicht 
 <lb n="10"/>geboren hat, Milch hat, ist ihre Monatsblutung ausgeblieben“. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,36">
-               <p n="36">
-                  <lb n="11"/>
-                  <note type="marginal">36</note>Aber auch ohne dass Milch an der Brust erscheint, gibt es auch folgende Ζei­chen 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,36">
+                  <p n="36">
+                     <lb n="11"/>Aber auch ohne dass Milch an der Brust erscheint, gibt es auch folgende Ζei­chen 
 <lb n="12"/>für die Verhaltung des Monatsblutes: Das Gefühl der Schwere im ganzen Kör­per, Ekel­
 <lb n="13"/>empfinden und Appetitlosigkeit und unregelmäßiges Frösteln einerseits, wenn es an­
 <lb n="14"/>dererseits eine Unregelmäßigkeit ohne Frösteln ist, ferner Ekelempfinden und Verlan­
@@ -1613,43 +1564,40 @@
 <lb n="16"/>den Gebärmutterhals durch Abtasten zu untersuchen. Wenn er nämlich geschlos­sen 
 <lb n="17"/>ist ohne Verhärtung, ist das ein Zeichen von Schwangerschaft. Einige von ihnen erbre­
 <lb n="18"/>chen auch die Nahrung, essen Erde oder erloschene Glut oder ähnliche Dinge. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,37">
-               <p n="37">
-                  <lb n="19"/>
-                  <note type="marginal">37</note>Der geschlossene Mund des Gebärmutterhalses, der mit Verhärtung einhergeht, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,37">
+                  <p n="37">
+                     <lb n="19"/>Der geschlossene Mund des Gebärmutterhalses, der mit Verhärtung einhergeht, 
 <lb n="20"/>zeigt jedoch an, dass irgendeine Krankheit in der Gebärmutter vorliegt, und die Heb­
 <lb n="21"/>amme muss prüfen, in welchen Teil sie (die Gebärmutter) sich zur Seite gezogen und 
 <lb n="22"/>zurückgezogen hat, denn bei jenem befindet sich auch der erkrankte Teil der Gebär­
 <lb n="23"/>mutter. Bei einigen Frauen aber zeigt auch ein Schmerz mit Schweregefühl in jenem 
 <lb n="24"/>Teil (ein Leiden) an, und der Schmerz kommt auch zur Hüfte, und das Bein selbst, was 
 <lb n="25"/>gerade ist, hinkt beim Laufen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,38">
-               <p n="38">
-                  <lb n="26"/>
-                  <note type="marginal">38</note>Und wenn über längere Zeit die Monatsblutung ausbleibt und der Arzt bei der 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,38">
+                  <p n="38">
+                     <lb n="26"/>Und wenn über längere Zeit die Monatsblutung ausbleibt und der Arzt bei der 
 <lb n="27"/>Frau keine Entleerung herbeiführt, erscheint manchmal irgendeine widernatürliche 
 <lb n="28"/>Geschwulst in den Weichen, der auf eine tieferliegende Entzündung hinweist. Bei einigen 
 <lb n="29"/>aber erhebt sich eine eitrige Geschwulst wie ein Berg am Ende der Weichen, so wie sie 
 <lb n="30"/>auch bei den Männern in dieser Gegend entstehen, und bei manchem eitert sie und 
 <lb n="31"/>bedarf des Schnitts. In dieser Region nun jedenfalls haben wir auch ein Glied gesehen, 
 <pb n="435"/>
-                  <lb n="1"/>dass vereitert war und aufgeschnitten wurde, wobei die unerfahreneren Ärzte manch­
+                     <lb n="1"/>dass vereitert war und aufgeschnitten wurde, wobei die unerfahreneren Ärzte manch­
 <lb n="2"/>mal nicht wussten, was sie schneiden, manchmal aber wussten sie es sogar. Und alle 
 <lb n="3"/>die­se so vereiterten Glieder wurden leicht geheilt, das Zusammenwachsen der Schnitte 
 <lb n="4"/>aber im Bereich der Gebärmutter gestaltet sich schwieriger. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,39">
-               <p n="39">
-                  <lb n="5"/>
-                  <note type="marginal">39</note>Solche Symptome nun folgen auf die Verhaltungen des Monatsbluts, und auch 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,39">
+                  <p n="39">
+                     <lb n="5"/>Solche Symptome nun folgen auf die Verhaltungen des Monatsbluts, und auch 
 <lb n="6"/>ohne diese (Symptome) (gibt es) Schmerzen in den Lenden und dem Vorderkopf und 
 <lb n="7"/>an der Augenbasis und brennende Fieber und schwärzlicher Urin mit einer roten Blut­
 <lb n="8"/>flüssigkeit, wie wenn du dem Spülwasser von frisch geschlachtetem Fleisch Ruß beimi­
@@ -1666,13 +1614,12 @@
 <lb n="19"/>(zeigt) alle Symptome, die wegen der unmäßigen Entleerung von Blut gewöhn­lich 
 <lb n="20"/>folgen, selbst wenn die Entleerung in Folge von Hämorrhoiden oder einer ande­ren 
 <lb n="21"/>Blutung entsteht. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,40">
-               <p n="40">
-                  <lb n="22"/>
-                  <note type="marginal">40</note>Und auch ohne dass die Gebärmutter erkrankt ist, kommt der sogenannte „weib­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,40">
+                  <p n="40">
+                     <lb n="22"/>Und auch ohne dass die Gebärmutter erkrankt ist, kommt der sogenannte „weib­
 <lb n="23"/>liche Fluss“ bei den Frauen vor, wobei der gesamte Körper dadurch gereinigt und ent­
 <lb n="24"/>leert wird, sowie es manchmal auch durch die Nieren zu einer Entleerung kommt. 
 <lb n="25"/>Dies kommt insbesondere bei den Zartfleischigen und Phlegmatischen vor, die wir 
@@ -1686,41 +1633,38 @@
 <lb n="33"/>dung wird nicht nur dadurch erkannt, sondern durch das Abtasten. Bei manchen 
 <lb n="34"/>Schwangeren wird auch Blut ausgeschieden, wenn sich die Venen im Bereich des (Ge­
 <lb n="35"/>bärmutter-)Halses öffnen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,41">
-               <p n="41">
-                  <lb n="36"/>
-                  <note type="marginal">41</note>Wenn aber die Brüste einer schwangeren Frau plötzlich dünn werden würden, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,41">
+                  <p n="41">
+                     <lb n="36"/>Wenn aber die Brüste einer schwangeren Frau plötzlich dünn werden würden, 
 <lb n="37"/>erwarte, dass sie einen Abort erleiden wird. Wenn sie mit Zwillingen schwanger ist 
 <pb n="437"/>
-                  <lb n="1"/>und die eine Brust dünn wird, zeigt es an, dass der eine Fötus von den zwei einen 
+                     <lb n="1"/>und die eine Brust dünn wird, zeigt es an, dass der eine Fötus von den zwei einen 
 <lb n="2"/>Abort erleiden wird. Und im allgemeinen steht die rechte Brust für das männliche, die 
 <lb n="3"/>andere für das weibliche, da die männlichen (Föten) im allgemeinen in den rechten 
 <lb n="4"/>Partien der Gebärmutter getragen werden, die weiblichen aber in den linken Teilen, 
 <lb n="5"/>und das Gegenteil kommt selten vor, wie es sich auch bei den anderen Tieren zeigt, 
 <lb n="6"/>deren Natur zwillingsgebärend ist, viele Ziegen nämlich und Schafe und von den 
 <lb n="7"/>anderen Vierbeinern nicht wenige. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="5,42">
-               <p n="42">
-                  <lb n="8"/>
-                  <note type="marginal">42</note>Wenn aber die Frau zwar rasch schwanger wird, aber im zweiten, dritten oder vier­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="5,42">
+                  <p n="42">
+                     <lb n="8"/>Wenn aber die Frau zwar rasch schwanger wird, aber im zweiten, dritten oder vier­
 <lb n="9"/>ten Monat einen Abort erleidet, sammelt sich in den Saugwarzen eine schleimartige 
 <lb n="10"/>Flüssigkeit, wegen der das Zusammenwachsen der in dieser Region vorhandenen 
 <lb n="11"/>Venen und Arterien mit den Mündungen der in die Gebärmutter gelangenden Gefäße 
 <lb n="12"/>ohne Spannung ist, sodass sie (Gebärmutter) nicht die Last des Fötus tragen kann, 
 <lb n="13"/>sondern sich der Fötus leicht loslöst. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,1">
-               <p n="1">
-                  <lb n="14"/>
-                  <note type="marginal">1</note>6. So wie nur wenige der Stoffe, die durch den After ausgeschieden werden, Anzei­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,1">
+                  <p n="1">
+                     <lb n="14"/>6. So wie nur wenige der Stoffe, die durch den After ausgeschieden werden, Anzei­
 <lb n="15"/>chen für eine Erkrankung der mit ihm benachbarten Körperteile sind, die meisten von 
 <lb n="16"/>ihnen aber auf eine Erkrankung der Därme, des Magens, der Milz und der Leber hin­
 <lb n="17"/>weisen und sie in nicht wenigen Fällen sogar Kennzeichen der Säfte des gesamten Kör­
@@ -1730,13 +1674,12 @@
 <lb n="21"/>Milz, der Lunge und des Brustkorbs, und des Zustands der Säfte im ganzen Körper. 
 <lb n="22"/>Sie unterscheiden sich aber mit Hilfe der anderen (Umstände), die wir als Begleit­sym­
 <lb n="23"/>ptome bei jedem erkrankten Körperteil bezeichneten. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,2">
-               <p n="2">
-                  <lb n="24"/>
-                  <note type="marginal">2</note>Dass die Scham selbst erkrankt ist, wirst du freilich an folgenden Zeichen erken­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,2">
+                  <p n="2">
+                     <lb n="24"/>Dass die Scham selbst erkrankt ist, wirst du freilich an folgenden Zeichen erken­
 <lb n="25"/>nen: Ein deutliches Kennzeichen für ein Geschwür ist der Schmerz, der in der Scham­
 <lb n="26"/>gegend entsteht zusammen mit der Tatsache, dass beim Harnlassen etwas von dem, 
 <lb n="27"/>was mit dem Geschwür zusammenhängt, ausgeschieden wird. Diese (Ausscheidungen) 
@@ -1745,15 +1688,14 @@
 <lb n="30"/>Urin vermischt sind. Beim Urinieren werden die Geschwüre der Scham verletzt, mehr 
 <lb n="31"/>wenn sie sauber werden, nachdem sich eine Kruste oder Schmutz abgelöst hat. Viel 
 <pb n="439"/>
-                  <lb n="1"/>häufiger werden die Entzündungen und ähnliche Zustände ohne Anzeichen erkannt. 
+                     <lb n="1"/>häufiger werden die Entzündungen und ähnliche Zustände ohne Anzeichen erkannt. 
 <lb n="2"/>Es ist aber besser über die Gonorrhö und den Priapismus ausführlich zu berichten. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,3">
-               <p n="3">
-                  <lb n="3"/>
-                  <note type="marginal">3</note>Die Gonorrhö ist eine unfreiwillige Samenausscheidung; man kann aber die Sa­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,3">
+                  <p n="3">
+                     <lb n="3"/>Die Gonorrhö ist eine unfreiwillige Samenausscheidung; man kann aber die Sa­
 <lb n="4"/>menausscheidung, die ständig und ohne Anspannung des Schamteils stattfindet, auch 
 <lb n="5"/>unbeabsichtigt nennen, wie es auch deutlicher ist. Der Priapismus aber ist eine Vergrö­
 <lb n="6"/>ßerung des ganzen Schamteils in der Länge und im Umfang ohne sexuelles Verlangen 
@@ -1762,13 +1704,12 @@
 <lb n="9"/>Vergrößerung oder dauerhafte Anschwellung des Schamteils. Sie wurde freilich nach 
 <lb n="10"/>Priapos so benannt. Jenen nämlich bilden die Menschen ab und malen ihn so, als 
 <lb n="11"/>hätte er von Natur aus ein solches Schamteil. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,4">
-               <p n="4">
-                  <lb n="12"/>
-                  <note type="marginal">4</note>Der Name Gonorrhö ist offensichtlich zusammengesetzt aus Gone (Samen) und 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,4">
+                  <p n="4">
+                     <lb n="12"/>Der Name Gonorrhö ist offensichtlich zusammengesetzt aus Gone (Samen) und 
 <lb n="13"/>rheein (fließen). Der Samen wird nämlich sowohl Gone als auch Gonos genannt. So 
 <lb n="14"/>wie dies auch bei allen anderen Stoffen, die aus dem Körper entleert werden, auf zwei­
 <lb n="15"/>fache Weise passiert – bald werden nämlich die Stoffe aus den Körpern, die sie enthal­
@@ -1781,20 +1722,19 @@
 <lb n="22"/>Gang stößt; zur Zurückhaltung aber kommt es, wenn der Gang im geschlossenen 
 <lb n="23"/>Zustand bleibt und kein Stoß von der enthaltenden Höhlung zu ihrem Inhalt kommt, 
 <lb n="24"/>sondern ganz im Gegenteil nur ein Zusammenziehen und Zurückhalten. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,5">
-               <p n="5">
-                  <lb n="25"/>
-                  <note type="marginal">5</note>So geschieht bei den natürlichen Zuständen die Ausscheidung und Zurückhaltung 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,5">
+                  <p n="5">
+                     <lb n="25"/>So geschieht bei den natürlichen Zuständen die Ausscheidung und Zurückhaltung 
 <lb n="26"/>der Flüssigkeiten, die in den hohlen Organen enthalten sind. Bei den widernatürlichen 
 <lb n="27"/>Zuständen aber kommt es zur Zurückhaltung wegen der Schwäche der ausscheiden­
 <lb n="28"/>den Kraft, zur Ausscheidung kommt es hingegen wegen der Schwäche der zurückhal­
 <lb n="29"/>tenden Kraft oder wegen eines Zustands, der in gleicher Weise wie die ausscheidende 
 <lb n="30"/>Kraft die Körperteile bewegt, ähnlich wie es in den Samenorganen selbst passiert bei 
 <pb n="441"/>
-                  <lb n="1"/>den Epilepsien und den anderen Krämpfen, wenn sie mit Gewalt entstehen. Wir sehen 
+                     <lb n="1"/>den Epilepsien und den anderen Krämpfen, wenn sie mit Gewalt entstehen. Wir sehen 
 <lb n="2"/>die Krämpfe auch bei anderen Körperteilen, z. B. Händen, Füßen und Zehen, wie sie 
 <lb n="3"/>bald entstehen, wenn der ganze Körper zugleich zusammenzuckt, bald aber betreffen 
 <lb n="4"/>sie allein diese Körperteile. Es ist also nicht ohne Grund, dass manchmal ein derartiger 
@@ -1803,13 +1743,12 @@
 <lb n="7"/>rückhaltende Kraft selbst gerade gelähmt ist. Die Gonorrhö ist also eine Erkran­kung 
 <lb n="8"/>der Samenorgane, und nicht der Geschlechtsteile, welche der Samen als Weg für seinen 
 <lb n="9"/>Ausfluss benutzt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,6">
-               <p n="6">
-                  <lb n="10"/>
-                  <note type="marginal">6</note>Der Priapismus zeigt sich deutlich als ein Symptom des Schamteils; es ist aber mög­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,6">
+                  <p n="6">
+                     <lb n="10"/>Der Priapismus zeigt sich deutlich als ein Symptom des Schamteils; es ist aber mög­
 <lb n="11"/>lich, auch wenn Letzteres keine besondere und spezielle Erkrankung hat, dass es nur 
 <lb n="12"/>eine Erkrankung der Arterien ist, die manchmal einen solchen widernatürlichen 
 <lb n="13"/>Zustand aufweisen, wie er ihnen zustößt, (immer) wenn eine natürliche Anspannung 
@@ -1817,13 +1756,12 @@
 <lb n="15"/>sichtlich für die, die aus der Schnelligkeit der Vergrößerung und der Zusammenzie­
 <lb n="16"/>hung Schlüsse ziehen. Denn keine Flüssigkeit ist in der Lage, eine so schnelle Verände­
 <lb n="17"/>rung in jede der beiden Richtungen zu bewirken. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,7">
-               <p n="7">
-                  <lb n="18"/>
-                  <note type="marginal">7</note>Da es sich so verhält und sich bei den anatomischen Sektionen große Arterien zei­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,7">
+                  <p n="7">
+                     <lb n="18"/>Da es sich so verhält und sich bei den anatomischen Sektionen große Arterien zei­
 <lb n="19"/>gen, die in diesen kleinen Körperteil, die Scham, münden, sich andererseits das Wesen 
 <lb n="20"/>des Schamteils zeigt, wie es kein anderer Körperteil hat – es ist nämlich ein im Ausse­
 <lb n="21"/>hen sehniger Körper, im ganzen röhrenförmig, außer der sogenannten „Eichel“ (Bala­
@@ -1831,13 +1769,12 @@
 <lb n="23"/>zunimmt im Vergleich zu dem mit dampfartiger Luft gefüllten Körperteil, die ihm von 
 <lb n="24"/>den Arterien her zufließt, und aus diesem Grund hat die Eichel immer dieselbe Größe, 
 <lb n="25"/>weil in ihr die röhrenartige Sehne nicht vorhanden ist. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,8">
-               <p n="8">
-                  <lb n="26"/>
-                  <note type="marginal">8</note>Was ist nun die Ursache dafür, dass sich beim sexuellen Trieb das Schamteil anfüllt? 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,8">
+                  <p n="8">
+                     <lb n="26"/>Was ist nun die Ursache dafür, dass sich beim sexuellen Trieb das Schamteil anfüllt? 
 <lb n="27"/>Und warum (geschieht das) auch bei denjenigen, die auf dem Rücken liegend schlafen, 
 <lb n="28"/>wenn sie in der Leistengegend erwärmt werden? Wenn die Ursache gefunden wird, 
 <lb n="29"/>dann gibt es auch Hoffnung, dass wir auch den Zustand des Priapismus herausfinden 
@@ -1847,14 +1784,13 @@
 <lb n="33"/>bar deutlich. Aus welcher Ursache von den beiden eher oder ob aus beiden, (das) lasst 
 <lb n="34"/>uns im Folgenden prüfen, nachdem wir folgenden Anfang unserer Argumentation 
 <lb n="35"/>machen.  </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,9">
-               <p n="9">
-                  <pb n="443"/>
-                  <lb n="1"/>
-                  <note type="marginal">9</note>Die Natur, die die Körperteile geformt und vervollkommnet hat, bewirkte, dass sie 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,9">
+                  <p n="9">
+                     <pb n="443"/>
+                     <lb n="1"/>Die Natur, die die Körperteile geformt und vervollkommnet hat, bewirkte, dass sie 
 <lb n="2"/>ohne Belehrung ihre eigene Funktion aufnehmen. Die größte Prüfung dieser (These) 
 <lb n="3"/>stellte ich an, als ich einmal eine junge Ziege aufzog, ohne dass sie jemals die (Mutter), 
 <lb n="4"/>die mit ihr schwanger war, gesehen hat. Als ich nämlich schwangere Ziegen wegen der 
@@ -1872,13 +1808,12 @@
 <lb n="16"/>allem geschnuppert hatte, schlürfte er von der Milch, und an dem Punkt haben wir 
 <lb n="17"/>alle aufgeschrien, da wir deutlich sahen, was Hippokrates sagte: „Die Natur der 
 <lb n="18"/>Lebewesen brauchen keine Anleitung“. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,10">
-               <p n="10">
-                  <lb n="19"/>
-                  <note type="marginal">10</note>So haben wir auch jenes Zicklein aufgezogen und wir haben gesehen, dass es später 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,10">
+                  <p n="10">
+                     <lb n="19"/>So haben wir auch jenes Zicklein aufgezogen und wir haben gesehen, dass es später 
 <lb n="20"/>nicht nur die Milch zu sich nahm, sondern auch einiges andere von den Sachen, die da 
 <lb n="21"/>lagen. Da der Zeitpunkt, zu dem der junge Bock seiner Mutter entrissen wurde, zeit­
 <lb n="22"/>nah zur Frühlingstag- und Nachtgleiche war, brachte ich ihm nach ungefähr zwei Mo­
@@ -1894,26 +1829,24 @@
 <lb n="32"/>chluckte zunächst einmal in den Mund wiederzubringen, es dann darin lange Zeit kau­
 <lb n="33"/>end zu zermalmen und es danach herunterzuschlucken, aber nicht in Richtung dessel­
 <pb n="445"/>
-                  <lb n="1"/>ben Magens, sondern eines anderen, schien uns erstaunlich genug zu sein. Die meisten 
+                     <lb n="1"/>ben Magens, sondern eines anderen, schien uns erstaunlich genug zu sein. Die meisten 
 <lb n="2"/>aber übersehen derartige Werke der Natur und bestaunen nur fremde Spektakel. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,11">
-               <p n="11">
-                  <lb n="3"/>
-                  <note type="marginal">11</note>Denn wie kann es uns nicht verwundern, dass die am meisten anatomisch interes­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,11">
+                  <p n="11">
+                     <lb n="3"/>Denn wie kann es uns nicht verwundern, dass die am meisten anatomisch interes­
 <lb n="4"/>sierten Ärzte untersuchen, durch welchen Muskel dieses Gelenk ausgestreckt wird, wie 
 <lb n="5"/>z. B. das Hüftgelenk, durch welchen es gebeugt wird, welche die Muskeln sind, die es 
 <lb n="6"/>zu jeder der beiden Seiten wegführen, und welche diejenigen (sind), die es nach beiden 
 <lb n="7"/>Seiten hin drehen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,12">
-               <p n="12">
-                  <lb n="8"/>
-                  <note type="marginal">12</note>Das Zicklein aber führt sofort eine jede beliebige Gelenkbewegung willentlich aus, 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,12">
+                  <p n="12">
+                     <lb n="8"/>Das Zicklein aber führt sofort eine jede beliebige Gelenkbewegung willentlich aus, 
 <lb n="9"/>wie freilich auch die Menschen selbst, obwohl sie nicht wissen, durch welchen Muskel 
 <lb n="10"/>jede einzelne Bewegung zustande kommt. Wie könnte man sich bei der Bewegung der 
 <lb n="11"/>Zunge nun, um ein Beispiel zu erwähnen, nicht wundern, wenn man herausfin­det, 
@@ -1928,13 +1861,12 @@
 <lb n="20"/>nen große Uneinigkeit unter den anatomisch interessierten Män­nern herrscht, wie sie 
 <lb n="21"/>zustande kommen und durch welche Organe, dennoch atmen und sprechen alle 
 <lb n="22"/>Lebewesen gleich nach ihrer Geburt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,13">
-               <p n="13">
-                  <lb n="23"/>
-                  <note type="marginal">13</note>Es ist also nicht verwunderlich, dass auch die Fortpflanzungsorgane die Funkti­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,13">
+                  <p n="13">
+                     <lb n="23"/>Es ist also nicht verwunderlich, dass auch die Fortpflanzungsorgane die Funkti­
 <lb n="24"/>onen, für die sie von der Natur geschaffen wurden, sofort von Anfang an kennen. 
 <lb n="25"/>Denn nachdem die Gebärmutter den Samen empfangen hat, schließt sie sich genau, 
 <lb n="26"/>bis der Embryo vollendet ist, und öffnet sich meistens, nachdem er vollendet wurde, 
@@ -1946,14 +1878,13 @@
 <lb n="32"/>neun Monate lang so genau geschlossen ist, dass sie nicht einmal die Nadel einer 
 <lb n="33"/>Sonde aufnehmen kann, wenn aber der Keimling vollendet wurde, hat sie solche Aus­
 <lb n="34"/>maße, dass das ganze Lebewesen herauskommt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,14">
-               <p n="14">
-                  <pb n="447"/>
-                  <lb n="1"/>
-                  <note type="marginal">14</note>Niemand zweifelt also daran, dass auch die Kraft der Geschlechtsorgane durch sich 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,14">
+                  <p n="14">
+                     <pb n="447"/>
+                     <lb n="1"/>Niemand zweifelt also daran, dass auch die Kraft der Geschlechtsorgane durch sich 
 <lb n="2"/>selbst belehrt ist, sodass jener röhrenartige Körper, sehnig oder strangartig im Aus­sehen, 
 <lb n="3"/>immer wenn das Lebewesen dem Trieb zum Geschlechtsverkehr nachgeht, sofort aus­
 <lb n="4"/>einandergeht, weil er eine natürliche Kraft hat, die ihn erweitert, wie das Herz und die 
@@ -1969,13 +1900,12 @@
 <lb n="14"/>an einem anderem Ort läge, dieselbe Funktion hätte; und (dies gilt auch für) die Leber 
 <lb n="15"/>und die Milz und alle anderen (Organe). Es ist nun nahe­liegend, dass auch die Arterien 
 <lb n="16"/>in jedem Körperteil die gleiche Funktion haben, wie es sich auch zeigt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,15">
-               <p n="15">
-                  <lb n="17"/>
-                  <note type="marginal">15</note>Zu einem passenden Zeitpunkt erweitern sich also die Arterien im ganzen Lebe­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,15">
+                  <p n="15">
+                     <lb n="17"/>Zu einem passenden Zeitpunkt erweitern sich also die Arterien im ganzen Lebe­
 <lb n="18"/>wesen in einer einander ähnlichen Weise. Folglich ist es nicht wahrscheinlich, dass die 
 <lb n="19"/>in das Geschlechtsteil einwachsenden Arterien eine andere Kraft noch dazu gewinnen 
 <lb n="20"/>neben der bereits in ihnen vorhandenen im ganzen Körper, sondern es ist denkbar, 
@@ -1988,14 +1918,13 @@
 <lb n="27"/>eine nicht geringe Menge Luft herausströmen lassen in den röhrenartigen Nerv, wo­
 <lb n="28"/>durch das Geschlechtsteil, das sich ein bisschen davon anfüllt, sich anspannt, wie wenn 
 <lb n="29"/>sich seine gesamte Substanz im Bereich des röhrenartigen Nervs befände. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,16">
-               <p n="16">
-                  <pb n="449"/>
-                  <lb n="1"/>
-                  <note type="marginal">16</note>Da uns diese Sachverhalte bekannt sind, wollen wir nun zum Zustand des Priapis­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,16">
+                  <p n="16">
+                     <pb n="449"/>
+                     <lb n="1"/>Da uns diese Sachverhalte bekannt sind, wollen wir nun zum Zustand des Priapis­
 <lb n="2"/>mus übergehen. Dass es zu (diesem) Leiden kommt, entweder weil sich die Mündun­
 <lb n="3"/>gen der Arterien weiten oder weil der röhrenartige Nerv eine dampfartige Luft her­vor­
 <lb n="4"/>bringt, zeigt sich aus den zuvor erkannten Sachverhalten. Man muss nun unter­suchen, 
@@ -2004,13 +1933,12 @@
 <lb n="7"/>ger auf die Erweiterung der Mündungen der Arterien folgt. Diese (Mün­dungen) kön­
 <lb n="8"/>nen nämlich leichter erweitert werden als dass sich eine blähende Luft im röhrenarti­
 <lb n="9"/>gen Nerv bildet. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,17">
-               <p n="17">
-                  <lb n="10"/>
-                  <note type="marginal">17</note>Und ich meine, diesen Zustand im Bereich des Nervs zwar nur einmal gesehen zu 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,17">
+                  <p n="17">
+                     <lb n="10"/>Und ich meine, diesen Zustand im Bereich des Nervs zwar nur einmal gesehen zu 
 <lb n="11"/>haben, den (Zustand) der Arterien aber mehrmals. Diese Schlussfolgerung habe ich 
 <lb n="12"/>sowohl aufgrund der vorangegangenen Symptome gezogen als auch aufgrund der Art 
 <lb n="13"/>der Behandlung. Bei demjenigen nämlich, bei dem kontinuierliche Pulsschläge voran­
@@ -2025,23 +1953,21 @@
 <lb n="22"/>men war, haben wir bei den einen wegen der Schärfe infolge der schlechten Säfte er­
 <lb n="23"/>schlossen, bei den anderen wegen der Entstehung einer blähenden Luft, die sich unge­
 <lb n="24"/>ordnet und gewaltsam bewegt. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,18">
-               <p n="18">
-                  <lb n="25"/>
-                  <note type="marginal">18</note>Denn auch die Heilmittel, die die Geschlechtsteile anspannen, sowohl die zur Ein­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,18">
+                  <p n="18">
+                     <lb n="25"/>Denn auch die Heilmittel, die die Geschlechtsteile anspannen, sowohl die zur Ein­
 <lb n="26"/>nahme (bestimmten) als auch diejenigen, die man in der Bauchfell- und Lenden­ge­
 <lb n="27"/>gend appliziert, sind alle warm und blähend, wie alle gegenteiligen (Heilmittel) nicht 
 <lb n="28"/>blähen und eher kühlen als wärmen. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,19">
-               <p n="19">
-                  <lb n="29"/>
-                  <note type="marginal">19</note>Man muss aber auf meine Worte aufpassen und nicht achtlos an ihnen vorbei­ge­
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,19">
+                  <p n="19">
+                     <lb n="29"/>Man muss aber auf meine Worte aufpassen und nicht achtlos an ihnen vorbei­ge­
 <lb n="30"/>hen. Ich sagte nämlich „Heilmittel“, nicht Speisen, weil einige Speisen die Entste­hung 
 <lb n="31"/>von viel Samen fördern und aus diesem Grund den Trieb zur Wollust verschär­fen. Dies 
 <lb n="32"/>bestätigt meine Rede, in der eben ausgeführt wurde, dass sogar diejenigen, die sich 
@@ -2050,18 +1976,17 @@
 <lb n="35"/>vom Geschlechtsverkehr fernhalten, immer wenn sie nicht mit Anstren­gung durch die 
 <lb n="36"/>Menge an körperlichen Übungen den Überschuss an Blut verwalten, und am meis­ten 
 <pb n="451"/>
-                  <lb n="1"/>diejenigen von ihnen, die sich einerseits nicht vom Gedanken am Geschlechtsver­kehr 
+                     <lb n="1"/>diejenigen von ihnen, die sich einerseits nicht vom Gedanken am Geschlechtsver­kehr 
 <lb n="2"/>befreit haben, wie die, die besonnen sind und über längere Zeit eine solche Ent­
 <lb n="3"/>haltsamkeit ausgeübt hatten, andererseits zu einer Vorstellung davon gelangen, so­
 <lb n="4"/>wohl durch Anblicke, die sie dazu veranlassen können, als auch durch die Erinne­rung 
 <lb n="5"/>daran. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,20">
-               <p n="20">
-                  <lb n="6"/>
-                  <note type="marginal">20</note>Der Zustand dieser Menschen im Geschlechtsteil ist dem Zustand derjenigen genau 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,20">
+                  <p n="20">
+                     <lb n="6"/>Der Zustand dieser Menschen im Geschlechtsteil ist dem Zustand derjenigen genau 
 <lb n="7"/>entgegengesetzt, die überhaupt keinen Gedanken an Geschlechtsverkehr ver­schwen­
 <lb n="8"/>den. Bei einem Freund, der sich entgegen seiner früheren Gewohnheit dazu entschie­
 <lb n="9"/>den hatte, vollkommen auf Geschlechtsverkehr zu verzichten, wurde das Ge­schlechts­
@@ -2072,13 +1997,12 @@
 <lb n="14"/>war. Dann gab ich ihm den Rat, den angesammelten Samen einerseits auszu­scheiden, 
 <lb n="15"/>sich andererseits von da an von Anblicken oder Erzählungen oder Erinne­rungen, die 
 <lb n="16"/>zum Geschlechtsverkehr anregen könnten, gänzlich fernzuhalten. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,21">
-               <p n="21">
-                  <lb n="17"/>
-                  <note type="marginal">21</note>Alle diejenigen aber, die von Anfang an, sei es weil sie Wettkämpfe bestritten oder 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,21">
+                  <p n="21">
+                     <lb n="17"/>Alle diejenigen aber, die von Anfang an, sei es weil sie Wettkämpfe bestritten oder 
 <lb n="18"/>weil sie sich im Gesang übten, unerfahren im Geschlechtsverkehr blieben, da sie sich 
 <lb n="19"/>gänzlich von allen Gedanken und derartigen Vorstellungen fern halten, werden ihre 
 <lb n="20"/>Geschlechtsteile mager und runzlig, gleich wie bei alten Männern. Neben den anderen 
@@ -2087,27 +2011,26 @@
 <lb n="23"/>das Blut reichlich dahin und die Kraft, die nach Geschlechtsverkehr verlangt, wächst; im 
 <lb n="24"/>gemeinsamen Buch über alle Kräfte, das Platon geschrieben hat, sagt er, dass die Ru­
 <lb n="25"/>he zwar die Kraft auflöse, die Beschäftigung mit eigenen Sachen aber die Kraft erhöhe. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,22">
-               <p n="22">
-                  <lb n="26"/>
-                  <note type="marginal">22</note>So bleiben auch die Brüste schlicht bei den Frauen, die nie schwanger geworden 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,22">
+                  <p n="22">
+                     <lb n="26"/>So bleiben auch die Brüste schlicht bei den Frauen, die nie schwanger geworden 
 <lb n="27"/>sind; bei den Frauen aber, die nach der Schwangerschaft stillen, werden sie sehr groß 
 <lb n="28"/>und geben stets Milch, solange sie stillen. Wenn sie aber mit dem Stillen der Kinder 
 <lb n="29"/>aufhören, hört auch die Milchbildung in den Brüsten nicht lange danach auf. </p>
-            </div>
-            <div type="textpart"
-                 subtype="chapter"
-                 n="6,23">
-               <p n="23">
-                  <lb n="30"/>
-                  <note type="marginal">23</note>Alle diese Dinge, die wir zuvor untersucht haben, werden uns Anhaltspunkte für 
+               </div>
+               <div type="textpart"
+                    subtype="chapter"
+                    n="6,23">
+                  <p n="23">
+                     <lb n="30"/>Alle diese Dinge, die wir zuvor untersucht haben, werden uns Anhaltspunkte für 
 <lb n="31"/>die Behandlung geben, wenn wir die Ursachen unterscheiden, durch die in jedem Pati­
 <lb n="32"/>enten dieses Leiden entstand. Jetzt ist aber nicht mehr der richtige Zeitpunkt dafür, da 
 <lb n="33"/>die vorliegende Abhandlung schon zum Ende gekommen ist. Ich werde das Buch hier 
 <lb n="34"/>beenden. </p>
+               </div>
             </div>
          </div>
       </body>
