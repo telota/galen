@@ -1,0 +1,1 @@
+De locis affectis © 2024 by Carl Wolfram Brunschön is licensed under CC BY-NC-SA 4.0 
