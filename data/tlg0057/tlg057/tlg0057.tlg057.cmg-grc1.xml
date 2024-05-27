@@ -92,7 +92,7 @@
       <encodingDesc>
          <refsDecl n="CTS">
             <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            <cRefPattern matchPattern="(.+),(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:div[@n='$1'])"/>
+            <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
       </encodingDesc>
       <profileDesc>
@@ -101,7 +101,6 @@
 					Greek
 				</language>
          </langUsage>
-         <!-- Mit Projekt zu klären, ob Angaben aus I-II auch auf V-VI angewendet werden kann -->
          <creation>
             <date notBefore="0190-01-01" notAfter="0213-01-01" cert="low">zweite Hälfte des 2. Jhdts.</date>
             <placeName>Rom/Pergamon</placeName>
