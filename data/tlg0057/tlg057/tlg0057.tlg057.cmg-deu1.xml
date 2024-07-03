@@ -102,8 +102,8 @@
       </profileDesc>
    </teiHeader>
    <text>
-      <body>
-         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg057.cmg-deu1">
+      <body xml:lang="deu" n="urn:cts:greekLit:tlg0057.tlg057.cmg-deu1">
+         <div type="edition" xml:lang="deu" n="urn:cts:greekLit:tlg0057.tlg057.cmg-deu1">
 				<!-- At the moment we are only including Book VI. -->
 				<!-- Other books will follow in the future. -->
             <div type="textpart" subtype="book" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-deu1" n="6">

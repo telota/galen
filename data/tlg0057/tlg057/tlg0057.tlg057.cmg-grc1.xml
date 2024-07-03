@@ -102,7 +102,7 @@
       </profileDesc>
    </teiHeader>
    <text>
-      <body>
+      <body xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1">
          <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1">
 				<!-- At the moment we are only including Book VI. -->
 				<!-- Other books will follow in the future. -->
