@@ -20,36 +20,23 @@
                   <forename>Carl Wolfram</forename>
                </persName>
             </editor>
-            <respStmt n="external_service">
-               <persName>
-                  <surname>Hagel</surname>
-                  <forename>Stefan</forename>
-               </persName>
-               <resp ref="https://credit.niso.org/contributor-roles/software/">Digital editing software (CTE)</resp>
+            <respStmt>
+               <persName>Stefan Hagel</persName>
+               <resp>Digital editing software (CTE)</resp>
             </respStmt>
-            <respStmt n="dh">
-               <orgName>
-                  <orgName role="institution" ref="https://www.bbaw.de/">Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</orgName>
-                  <orgName role="department" ref="https://www.bbaw.de/bbaw-digital/telota">TELOTA - The Electronic Life Of The Academy</orgName>
-               </orgName>
-               <resp ref="https://credit.niso.org/contributor-roles/resources/">Digital conversion</resp>
+            <respStmt>
+               <orgName>Berlin-Brandenburgische Akademie der Wissenschaften (BBAW), TELOTA - The Electronic Life Of The Academy</orgName>
+               <resp>Digital conversion</resp>
             </respStmt>
-            <respStmt n="dh">
-               <persName>
-                  <surname>Lampert</surname>
-                  <forename>Marcus</forename>
-               </persName>
+            <respStmt>
+               <persName>Marcus Lampert</persName>
                <orgName>BBAW/TELOTA</orgName>
-               <resp ref="https://credit.niso.org/contributor-roles/resources/">Digital conversion</resp>
+               <resp>Digital conversion</resp>
             </respStmt>
-            <respStmt n="dh">
-               <persName>
-                  <surname>Arndt</surname>
-                  <forename>Nadine</forename>
-                  <idno type="orcid">https://orcid.org/0000-0002-2257-7236</idno>
-               </persName>
+            <respStmt>
+               <persName>Nadine Arndt</persName>
                <orgName>BBAW/TELOTA</orgName>
-               <resp ref="https://credit.niso.org/contributor-roles/resources/">Digital conversion</resp>
+               <resp>Digital conversion</resp>
             </respStmt>
          </titleStmt>
          <publicationStmt>
