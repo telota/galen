@@ -40,20 +40,9 @@
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <publisher>
-               <orgName role="hostingInstitution">
-                  <ref target="https://www.bbaw.de">Berlin-Brandenburgische Akademie der Wissenschaften</ref>
-               </orgName>
-               <orgName role="project">
-                  <ref target="https://cmg.bbaw.de/startseite/">Galen als Vermittler, Interpret und Vollender der antiken Medizin</ref>
-               </orgName>
-               <address>
-                  <addrLine>Jägerstr. 22/23, 10117 Berlin</addrLine>
-                  <country>Germany</country>
-               </address>
-            </publisher>
-            <pubPlace ref="https://www.geonames.org/2950159">Berlin</pubPlace>
-            <date type="publication">2024</date>
+            <publisher>Berlin-Brandenburgische Akademie der Wissenschaften</publisher>
+            <pubPlace>Jägerstr. 22/23, 10117 Berlin, Germany</pubPlace>
+            <authority>Galen als Vermittler, Interpret und Vollender der antiken Medizin</authority>
             <availability>
                <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
                   <p>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</p>
