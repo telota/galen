@@ -1,0 +1,22 @@
+name: Release
+# Modelled on https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/.github/workflows/ci.yml
+
+on:
+  push:
+    # Dispatch when pushing to default branch; currently `main`
+    branches:
+    - main
+  # Dispatch on pull requests
+  pull_request:
+jobs:
+  create_release:
+    name: Create release
+    runs-on: ubuntu-latest
+    env:
+      MAJOR_VERSION: 0
+      MINOR_VERSION: 0
+    steps:
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.MAJOR_VERSION }}.${{ env.MINOR_VERSION }}.${{ github.run_id }}
