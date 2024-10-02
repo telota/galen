@@ -107,7 +107,7 @@
 				<!-- At the moment we are only including Book VI. -->
 				<!-- Other books will follow in the future. -->
             <div type="textpart" subtype="book" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1" n="6">
-               <head>ΓΑΛΗΝΟΥΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝΒΙΒΛΙΟΝ ΕΚΤΟΝ</head>
+               <head> ΓΑΛΗΝΟΥ ΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝ ΒΙΒΛΙΟΝ ΕΚΤΟΝ </head>
                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:6" n="1">
                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:6.1" n="1">
                      <p>
