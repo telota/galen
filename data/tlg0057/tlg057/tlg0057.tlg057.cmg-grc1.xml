@@ -139,7 +139,17 @@
 				<!-- Other books will follow in the future. -->
             <div type="textpart" subtype="book" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1" n="1">
                <head>
-                  <pb n="226"/>ΓαληνουΠερι διαγνωσεως τοπων πεπονθοτωνβιβλιον αʹ</head>
+                  <pb n="226"/>  
+											
+							ΓΑΛΗΝΟΥ  
+											
+							ΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝ  
+											
+							ΒΙΒΛΙΟΝ Αʹ  
+											
+									
+
+					</head>
                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:1" n="1">
                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:1.1" n="1">
                      <p>
@@ -493,7 +503,17 @@
             </div>
             <div type="textpart" subtype="book" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1" n="2">
                <head>
-                  <pb n="306"/>ΓαληνουΠερι διαγνωσεως τοπων πεπονθοτωνβιβλιον βʹ</head>
+                  <pb n="306"/>  
+											
+							ΓΑΛΗΝΟΥ  
+											
+							ΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝ  
+											
+							ΒΙΒΛΙΟΝ Βʹ  
+											
+									
+
+					</head>
                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:2" n="1">
                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:2.1" n="1">
                      <p>Πρόκειται μέν, ὡς Ἐρασίστρατος ἀεὶ παρακελεύεται, γυμνάζειν τὸν λογισμὸν εἴς τε τἆλλα τῆς τέχνης ἔργα καὶ τὰ νῦν ἡμῖν προκείμενα περὶ τὰς διαγνώσεις τῶν πεπονθότων τόπων, εἰσὶ δὲ τρεῖς τρόποι γυμνασίου κατ' αὐτά· πρῶτος μὲν ὁ καθ' ἕκαστον τῶν μορίων τοῦ σώματος, ἃ τόπους ὀνομάζουσι, δεύτερος δὲ ὁ κατὰ τὰς αἰτίας τε καὶ διαθέσεις καὶ τρίτος ὁ κατὰ τὰς τῶν συμπτωμάτων διαφοράς.</p>
@@ -874,7 +894,17 @@
                </div>
             </div>
             <div type="textpart" subtype="book" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1" n="5">
-               <head>ΓΑΛΗΝΟΥΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝΒΙΒΛΙΟΝ ΠΕΜΠΤΟΝ</head>
+               <head>  
+											
+							ΓΑΛΗΝΟΥ  
+											
+							ΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝ  
+											
+							ΒΙΒΛΙΟΝ ΠΕΜΠΤΟΝ  
+											
+									
+
+					</head>
                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:5" n="1">
                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:5.1" n="1">
                      <p>
@@ -1345,9 +1375,19 @@
                </div>
             </div>
             <div type="textpart" subtype="book" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1" n="6">
-               <head>ΓΑΛΗΝΟΥΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝ
+               <head>  
 											
-							ΒΙΒΛΙΟΝ ΕΚΤΟΝ</head>
+							ΓΑΛΗΝΟΥ  
+											
+							ΠΕΡΙ ΔΙΑΓΝΩΣΕΩΣ ΤΟΠΩΝ ΠΕΠΟΝΘΟΤΩΝ  
+											
+							  
+											
+							ΒΙΒΛΙΟΝ ΕΚΤΟΝ  
+											
+									
+
+					</head>
                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:6" n="1">
                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0057.tlg057.cmg-grc1:6.1" n="1">
                      <p>
